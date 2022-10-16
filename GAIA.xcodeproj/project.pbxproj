@@ -35,9 +35,6 @@
 		DA8A8BF627E279BB0029C10E /* Experience1.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = DA8A8BF527E279BB0029C10E /* Experience1.rcproject */; };
 		DA8A8BF827E279BC0029C10E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA8A8BF727E279BC0029C10E /* Assets.xcassets */; };
 		DA8A8BFB27E279BC0029C10E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA8A8BFA27E279BC0029C10E /* Preview Assets.xcassets */; };
-		DA8A8C0527E279BD0029C10E /* GAIATests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8A8C0427E279BD0029C10E /* GAIATests.swift */; };
-		DA8A8C0F27E279BD0029C10E /* GAIAUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8A8C0E27E279BD0029C10E /* GAIAUITests.swift */; };
-		DA8A8C1127E279BD0029C10E /* GAIAUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8A8C1027E279BD0029C10E /* GAIAUITestsLaunchTests.swift */; };
 		DA8E510228C3BAF200F9B72E /* Experience10.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = DADACCBD28C3A69900E81F22 /* Experience10.rcproject */; };
 		DA9BFE762854D2E800F59D0B /* Experience9.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = DAEED2202854CA5E00D63DC4 /* Experience9.rcproject */; };
 		DA9BFEB42854DDB300F59D0B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9BFEB32854DDB300F59D0B /* AppDelegate.swift */; };
@@ -58,20 +55,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = DA4D1FFF28FC4B8F00E5FA1E;
 			remoteInfo = "Gaia Watch Watch App";
-		};
-		DA8A8C0127E279BD0029C10E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = DA8A8BE627E279BB0029C10E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = DA8A8BED27E279BB0029C10E;
-			remoteInfo = GAIA;
-		};
-		DA8A8C0B27E279BD0029C10E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = DA8A8BE627E279BB0029C10E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = DA8A8BED27E279BB0029C10E;
-			remoteInfo = GAIA;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -130,11 +113,6 @@
 		DA8A8BF527E279BB0029C10E /* Experience1.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Experience1.rcproject; sourceTree = "<group>"; };
 		DA8A8BF727E279BC0029C10E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA8A8BFA27E279BC0029C10E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		DA8A8C0027E279BD0029C10E /* GAIATests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GAIATests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DA8A8C0427E279BD0029C10E /* GAIATests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GAIATests.swift; sourceTree = "<group>"; };
-		DA8A8C0A27E279BD0029C10E /* GAIAUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GAIAUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DA8A8C0E27E279BD0029C10E /* GAIAUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GAIAUITests.swift; sourceTree = "<group>"; };
-		DA8A8C1027E279BD0029C10E /* GAIAUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GAIAUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		DA8F18622832DE5F0030F2B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		DA9BFEB32854DDB300F59D0B /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DAA9114528171CF60000E93D /* GAIA.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GAIA.entitlements; sourceTree = "<group>"; };
@@ -160,20 +138,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		DA8A8BEB27E279BB0029C10E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DA8A8BFD27E279BD0029C10E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DA8A8C0727E279BD0029C10E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -252,8 +216,6 @@
 			children = (
 				DA8A8BF027E279BB0029C10E /* GAIA */,
 				DA4D200128FC4B8F00E5FA1E /* Gaia Watch Watch App */,
-				DA8A8C0327E279BD0029C10E /* GAIATests */,
-				DA8A8C0D27E279BD0029C10E /* GAIAUITests */,
 				DA8A8BEF27E279BB0029C10E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -262,8 +224,6 @@
 			isa = PBXGroup;
 			children = (
 				DA8A8BEE27E279BB0029C10E /* GAIA.app */,
-				DA8A8C0027E279BD0029C10E /* GAIATests.xctest */,
-				DA8A8C0A27E279BD0029C10E /* GAIAUITests.xctest */,
 				DA4D200028FC4B8F00E5FA1E /* Gaia Watch Watch App.app */,
 			);
 			name = Products;
@@ -299,23 +259,6 @@
 				DA8A8BFA27E279BC0029C10E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		DA8A8C0327E279BD0029C10E /* GAIATests */ = {
-			isa = PBXGroup;
-			children = (
-				DA8A8C0427E279BD0029C10E /* GAIATests.swift */,
-			);
-			path = GAIATests;
-			sourceTree = "<group>";
-		};
-		DA8A8C0D27E279BD0029C10E /* GAIAUITests */ = {
-			isa = PBXGroup;
-			children = (
-				DA8A8C0E27E279BD0029C10E /* GAIAUITests.swift */,
-				DA8A8C1027E279BD0029C10E /* GAIAUITestsLaunchTests.swift */,
-			);
-			path = GAIAUITests;
 			sourceTree = "<group>";
 		};
 		DABB04D128F9ED4B00C6DAC6 /* CloudKit */ = {
@@ -367,42 +310,6 @@
 			productReference = DA8A8BEE27E279BB0029C10E /* GAIA.app */;
 			productType = "com.apple.product-type.application";
 		};
-		DA8A8BFF27E279BD0029C10E /* GAIATests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = DA8A8C1727E279BD0029C10E /* Build configuration list for PBXNativeTarget "GAIATests" */;
-			buildPhases = (
-				DA8A8BFC27E279BD0029C10E /* Sources */,
-				DA8A8BFD27E279BD0029C10E /* Frameworks */,
-				DA8A8BFE27E279BD0029C10E /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				DA8A8C0227E279BD0029C10E /* PBXTargetDependency */,
-			);
-			name = GAIATests;
-			productName = GAIATests;
-			productReference = DA8A8C0027E279BD0029C10E /* GAIATests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		DA8A8C0927E279BD0029C10E /* GAIAUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = DA8A8C1A27E279BD0029C10E /* Build configuration list for PBXNativeTarget "GAIAUITests" */;
-			buildPhases = (
-				DA8A8C0627E279BD0029C10E /* Sources */,
-				DA8A8C0727E279BD0029C10E /* Frameworks */,
-				DA8A8C0827E279BD0029C10E /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				DA8A8C0C27E279BD0029C10E /* PBXTargetDependency */,
-			);
-			name = GAIAUITests;
-			productName = GAIAUITests;
-			productReference = DA8A8C0A27E279BD0029C10E /* GAIAUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -418,14 +325,6 @@
 					};
 					DA8A8BED27E279BB0029C10E = {
 						CreatedOnToolsVersion = 13.2.1;
-					};
-					DA8A8BFF27E279BD0029C10E = {
-						CreatedOnToolsVersion = 13.2.1;
-						TestTargetID = DA8A8BED27E279BB0029C10E;
-					};
-					DA8A8C0927E279BD0029C10E = {
-						CreatedOnToolsVersion = 13.2.1;
-						TestTargetID = DA8A8BED27E279BB0029C10E;
 					};
 				};
 			};
@@ -443,8 +342,6 @@
 			projectRoot = "";
 			targets = (
 				DA8A8BED27E279BB0029C10E /* GAIA */,
-				DA8A8BFF27E279BD0029C10E /* GAIATests */,
-				DA8A8C0927E279BD0029C10E /* GAIAUITests */,
 				DA4D1FFF28FC4B8F00E5FA1E /* Gaia Watch Watch App */,
 			);
 		};
@@ -466,20 +363,6 @@
 			files = (
 				DA8A8BFB27E279BC0029C10E /* Preview Assets.xcassets in Resources */,
 				DA8A8BF827E279BC0029C10E /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DA8A8BFE27E279BD0029C10E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DA8A8C0827E279BD0029C10E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -534,23 +417,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DA8A8BFC27E279BD0029C10E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DA8A8C0527E279BD0029C10E /* GAIATests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DA8A8C0627E279BD0029C10E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DA8A8C1127E279BD0029C10E /* GAIAUITestsLaunchTests.swift in Sources */,
-				DA8A8C0F27E279BD0029C10E /* GAIAUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -558,16 +424,6 @@
 			isa = PBXTargetDependency;
 			target = DA4D1FFF28FC4B8F00E5FA1E /* Gaia Watch Watch App */;
 			targetProxy = DA4D200B28FC4B9000E5FA1E /* PBXContainerItemProxy */;
-		};
-		DA8A8C0227E279BD0029C10E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = DA8A8BED27E279BB0029C10E /* GAIA */;
-			targetProxy = DA8A8C0127E279BD0029C10E /* PBXContainerItemProxy */;
-		};
-		DA8A8C0C27E279BD0029C10E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = DA8A8BED27E279BB0029C10E /* GAIA */;
-			targetProxy = DA8A8C0B27E279BD0029C10E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -834,82 +690,6 @@
 			};
 			name = Release;
 		};
-		DA8A8C1827E279BD0029C10E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = HK25UU76R6;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = goguigo.GAIATests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GAIA.app/GAIA";
-			};
-			name = Debug;
-		};
-		DA8A8C1927E279BD0029C10E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = HK25UU76R6;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = goguigo.GAIATests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GAIA.app/GAIA";
-			};
-			name = Release;
-		};
-		DA8A8C1B27E279BD0029C10E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = HK25UU76R6;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = goguigo.GAIAUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = GAIA;
-			};
-			name = Debug;
-		};
-		DA8A8C1C27E279BD0029C10E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = HK25UU76R6;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = goguigo.GAIAUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = GAIA;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -936,24 +716,6 @@
 			buildConfigurations = (
 				DA8A8C1527E279BD0029C10E /* Debug */,
 				DA8A8C1627E279BD0029C10E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		DA8A8C1727E279BD0029C10E /* Build configuration list for PBXNativeTarget "GAIATests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				DA8A8C1827E279BD0029C10E /* Debug */,
-				DA8A8C1927E279BD0029C10E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		DA8A8C1A27E279BD0029C10E /* Build configuration list for PBXNativeTarget "GAIAUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				DA8A8C1B27E279BD0029C10E /* Debug */,
-				DA8A8C1C27E279BD0029C10E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
