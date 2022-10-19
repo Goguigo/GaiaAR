@@ -22,7 +22,6 @@ struct StatusView: View {
                 Text("GaiaAR, versão 3.0")
                     .font(.footnote)
             }
-            .edgesIgnoringSafeArea(.bottom)
         } else {
             VStack {
                 Text("Sincronização:")
@@ -35,7 +34,6 @@ struct StatusView: View {
                 Text("GaiaAR, versão 3.0")
                     .font(.footnote)
             }
-            .edgesIgnoringSafeArea(.bottom)
         }
     }
 }
