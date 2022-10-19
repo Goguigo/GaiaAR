@@ -18,32 +18,28 @@ struct NewHomeView: View {
         NavigationView {
             VStack {
                 List {
-                    Section(header: Text("Categorias")) {
+                    Section(header: Text("Coleções")) {
                         NavigationLink(destination: Novos()) {
                             Label("Novos", systemImage: "sparkles")
                         }
                         NavigationLink(destination: Tudo()) {
                             Label("Tudo", systemImage: "tray.2.fill")
                         }
+                    }
+                    Section(header: Text("Categorias")) {
                         NavigationLink(destination: Educação()) {
                             Label("Educação", systemImage: "graduationcap.fill")
                         }
                         NavigationLink(destination: Jogos()) {
                             Label("Jogos", systemImage: "gamecontroller.fill")
                         }
-                        NavigationLink(destination: Arte()) {
-                            Label("Arte", systemImage: "paintpalette.fill")
-                        }
                         NavigationLink(destination: Ciencia()) {
                             Label("Ciências", systemImage: "globe.americas.fill")
                         }
                     }
-                    Section(header: Text("Conteúdo")) {
-                        NavigationLink(destination: AR()) {
-                            Label("Experiências de AR", systemImage: "camera.fill")
-                        }
+                    Section(header: Text("Apps")) {
                         NavigationLink(destination: Aplicativos()) {
-                            Label("Apps", systemImage: "iphone.homebutton")
+                            Label("Criatividade", systemImage: "paintbrush.fill")
                         }
                     }
                     Section(header: Text("Outros")) {

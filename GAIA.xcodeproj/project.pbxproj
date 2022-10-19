@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA0E9BAC290046F40073AB94 /* DrawingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0E9BAB290046F40073AB94 /* DrawingView.swift */; };
+		DA0E9BAE290047120073AB94 /* DrawingCanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0E9BAD290047120073AB94 /* DrawingCanvasView.swift */; };
+		DA0E9BB0290047590073AB94 /* DrawingCanvasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0E9BAF290047590073AB94 /* DrawingCanvasViewController.swift */; };
+		DA0E9BB2290047800073AB94 /* GalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0E9BB1290047800073AB94 /* GalleryView.swift */; };
+		DA0E9BB4290047BA0073AB94 /* AddNewCanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0E9BB3290047BA0073AB94 /* AddNewCanvasView.swift */; };
 		DA2092A02832DC1300AC8C39 /* CanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA20929D2832DC1300AC8C39 /* CanvasView.swift */; };
 		DA2092A12832DC1300AC8C39 /* ColorPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA20929E2832DC1300AC8C39 /* ColorPickerView.swift */; };
 		DA2092A22832DC1300AC8C39 /* Information.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA20929F2832DC1300AC8C39 /* Information.swift */; };
@@ -41,11 +46,6 @@
 		DABB04D328F9ED7500C6DAC6 /* iCloudUserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABB04D228F9ED7500C6DAC6 /* iCloudUserView.swift */; };
 		DAC1C42228C3E4EA008D0142 /* Experience11.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = DAC1C42128C3E4EA008D0142 /* Experience11.rcproject */; };
 		DAD999F728C52B7E00CCA315 /* Experience12.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = DAD999F628C52B7E00CCA315 /* Experience12.rcproject */; };
-		DADBD12228FC697800D563EE /* DrawingCanvasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADBD11D28FC697800D563EE /* DrawingCanvasViewController.swift */; };
-		DADBD12328FC697800D563EE /* GalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADBD11E28FC697800D563EE /* GalleryView.swift */; };
-		DADBD12428FC697800D563EE /* DrawingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADBD11F28FC697800D563EE /* DrawingView.swift */; };
-		DADBD12528FC697800D563EE /* DrawingCanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADBD12028FC697800D563EE /* DrawingCanvasView.swift */; };
-		DADBD12628FC697800D563EE /* NovoQuadro.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADBD12128FC697800D563EE /* NovoQuadro.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +83,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		DA0E9BAB290046F40073AB94 /* DrawingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingView.swift; sourceTree = "<group>"; };
+		DA0E9BAD290047120073AB94 /* DrawingCanvasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingCanvasView.swift; sourceTree = "<group>"; };
+		DA0E9BAF290047590073AB94 /* DrawingCanvasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingCanvasViewController.swift; sourceTree = "<group>"; };
+		DA0E9BB1290047800073AB94 /* GalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryView.swift; sourceTree = "<group>"; };
+		DA0E9BB3290047BA0073AB94 /* AddNewCanvasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewCanvasView.swift; sourceTree = "<group>"; };
 		DA20929D2832DC1300AC8C39 /* CanvasView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CanvasView.swift; sourceTree = "<group>"; };
 		DA20929E2832DC1300AC8C39 /* ColorPickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorPickerView.swift; sourceTree = "<group>"; };
 		DA20929F2832DC1300AC8C39 /* Information.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Information.swift; sourceTree = "<group>"; };
@@ -121,11 +126,6 @@
 		DAC81BF127EA96DB007D5921 /* Licensa.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Licensa.md; sourceTree = "<group>"; };
 		DAD999F628C52B7E00CCA315 /* Experience12.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Experience12.rcproject; sourceTree = "<group>"; };
 		DADACCBD28C3A69900E81F22 /* Experience10.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Experience10.rcproject; sourceTree = "<group>"; };
-		DADBD11D28FC697800D563EE /* DrawingCanvasViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DrawingCanvasViewController.swift; path = GAIA/DrawingCanvasViewController.swift; sourceTree = SOURCE_ROOT; };
-		DADBD11E28FC697800D563EE /* GalleryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GalleryView.swift; path = GAIA/GalleryView.swift; sourceTree = SOURCE_ROOT; };
-		DADBD11F28FC697800D563EE /* DrawingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DrawingView.swift; path = GAIA/DrawingView.swift; sourceTree = SOURCE_ROOT; };
-		DADBD12028FC697800D563EE /* DrawingCanvasView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DrawingCanvasView.swift; path = GAIA/DrawingCanvasView.swift; sourceTree = SOURCE_ROOT; };
-		DADBD12128FC697800D563EE /* NovoQuadro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NovoQuadro.swift; path = GAIA/NovoQuadro.swift; sourceTree = SOURCE_ROOT; };
 		DAEED2202854CA5E00D63DC4 /* Experience9.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Experience9.rcproject; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -150,11 +150,11 @@
 		DA4A50F528F8831800FE24ED /* PencilKit */ = {
 			isa = PBXGroup;
 			children = (
-				DADBD11F28FC697800D563EE /* DrawingView.swift */,
-				DADBD12028FC697800D563EE /* DrawingCanvasView.swift */,
-				DADBD11D28FC697800D563EE /* DrawingCanvasViewController.swift */,
-				DADBD11E28FC697800D563EE /* GalleryView.swift */,
-				DADBD12128FC697800D563EE /* NovoQuadro.swift */,
+				DA0E9BAB290046F40073AB94 /* DrawingView.swift */,
+				DA0E9BAD290047120073AB94 /* DrawingCanvasView.swift */,
+				DA0E9BAF290047590073AB94 /* DrawingCanvasViewController.swift */,
+				DA0E9BB3290047BA0073AB94 /* AddNewCanvasView.swift */,
+				DA0E9BB1290047800073AB94 /* GalleryView.swift */,
 				DA4A50F828F8853D00FE24ED /* Persistence.swift */,
 			);
 			name = PencilKit;
@@ -387,31 +387,31 @@
 			files = (
 				DA2092A22832DC1300AC8C39 /* Information.swift in Sources */,
 				DA9BFE762854D2E800F59D0B /* Experience9.rcproject in Sources */,
-				DADBD12528FC697800D563EE /* DrawingCanvasView.swift in Sources */,
 				DAC1C42228C3E4EA008D0142 /* Experience11.rcproject in Sources */,
 				DA4625C227E8EED200B8F937 /* Experience4.rcproject in Sources */,
-				DADBD12328FC697800D563EE /* GalleryView.swift in Sources */,
 				DA356F0A28BD32BD00C163BB /* Experience6.rcproject in Sources */,
 				DA441A9627E3D44600CDB162 /* Experience3.rcproject in Sources */,
+				DA0E9BAE290047120073AB94 /* DrawingCanvasView.swift in Sources */,
 				DAD999F728C52B7E00CCA315 /* Experience12.rcproject in Sources */,
 				DA2609B528527471002BF3BB /* Experience8.rcproject in Sources */,
 				DA2D00BD2889B328009D4D2E /* NewHomeView.swift in Sources */,
 				DA4A50F928F8853D00FE24ED /* Persistence.swift in Sources */,
 				DA4A50F428F8828900FE24ED /* Galeria.xcdatamodeld in Sources */,
 				DA441A9227E3CA8B00CDB162 /* SceneView.swift in Sources */,
-				DADBD12228FC697800D563EE /* DrawingCanvasViewController.swift in Sources */,
+				DA0E9BB0290047590073AB94 /* DrawingCanvasViewController.swift in Sources */,
 				DA7398B4289DB9DF0026667C /* DocumentationView.swift in Sources */,
 				DA2092A12832DC1300AC8C39 /* ColorPickerView.swift in Sources */,
-				DADBD12428FC697800D563EE /* DrawingView.swift in Sources */,
 				DA8A8BF427E279BB0029C10E /* ContentView.swift in Sources */,
+				DA0E9BB4290047BA0073AB94 /* AddNewCanvasView.swift in Sources */,
 				DA74C63B289C4ECC00F8B7FF /* Grids.swift in Sources */,
+				DA0E9BB2290047800073AB94 /* GalleryView.swift in Sources */,
 				DA4C0FED28454670009D7950 /* Experience5.rcproject in Sources */,
 				DA8E510228C3BAF200F9B72E /* Experience10.rcproject in Sources */,
 				DA8A8BF627E279BB0029C10E /* Experience1.rcproject in Sources */,
 				DABB04D328F9ED7500C6DAC6 /* iCloudUserView.swift in Sources */,
-				DADBD12628FC697800D563EE /* NovoQuadro.swift in Sources */,
 				DA9BFEB42854DDB300F59D0B /* AppDelegate.swift in Sources */,
 				DA2A8475286E28F200DA341F /* IntroductionView.swift in Sources */,
+				DA0E9BAC290046F40073AB94 /* DrawingView.swift in Sources */,
 				DA2092A02832DC1300AC8C39 /* CanvasView.swift in Sources */,
 				DA4AF6D528550E1900D5C10D /* TextEditorView.swift in Sources */,
 			);

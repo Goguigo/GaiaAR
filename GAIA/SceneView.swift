@@ -39,10 +39,7 @@ struct SceneView: View {
      @State var isHidden: Bool = true
      @State var isActive: Bool = false
     @State var propId: Int = 0
-<<<<<<< Updated upstream
-=======
     @State var speed: Double = 350
->>>>>>> Stashed changes
     let persistenceController = PersistenceController.shared
     var body: some View {
         if self.list.lista == 0 {

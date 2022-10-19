@@ -56,23 +56,11 @@ struct TextEditorView: View {
                         .buttonBorderShape(.roundedRectangle)
                         Spacer()
                             .frame(width: 20)
-                        Button(action: {
-                            if fontSize >= 0 {
-                                fontSize -= 1
-                            }
-                        }) {
-                            Text("-")
-                        }
-                        .buttonStyle(.bordered)
-                        .buttonBorderShape(.roundedRectangle)
-                        Image(systemName: "textformat.size")
                     }
-                    Button(action: {
-                        if fontSize < 32 {
-                            fontSize += 1
-                        }
-                    }) {
-                        Text("+")
+                    Button {
+                        vm.addButtonPressed()
+                    } label: {
+                        Image(systemName: "plus.app.fill")
                     }
                     .buttonStyle(.bordered)
                     .buttonBorderShape(.roundedRectangle)
@@ -107,30 +95,30 @@ struct TextEditorView: View {
                     TextField("Toque aqui para editar...", text: $vm.text)
                         .font(.system(size: fontSize))
                         .toolbar {
-                         ToolbarItemGroup(placement: .keyboard) {
-                             Button(action: {
-                                 if !vm.text.isEmpty {
-                                     vm.addButtonPressed()
-                                     imageName = "link.icloud.fill"
-                                     DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(1), execute: {
-                                         imageName = "icloud.fill"
-                                     })
-                                 }
-                             }) {
-                                 Image(systemName: "folder.badge.plus")
-                                     .renderingMode(.original)
-                                     .foregroundColor(Color(.blue))
-                             }
-                             .padding([.top, .bottom])
-                             .buttonStyle(.bordered)
-                             .buttonBorderShape(.roundedRectangle)
-                             .font(.title2)
-                             Image(systemName: imageName)
-                                 .renderingMode(.original)
-                                 .foregroundColor(Color(.blue))
-                                 .font(.title2)
-                             
-                    }
+                            ToolbarItemGroup(placement: .keyboard) {
+                                Group {
+                                    Spacer()
+                                    Button(action: {
+                                        if fontSize >= 0 {
+                                            fontSize -= 1
+                                        }
+                                    }) {
+                                        Text("-")
+                                    }
+                                    .buttonStyle(.bordered)
+                                    .buttonBorderShape(.roundedRectangle)
+                                    Image(systemName: "textformat.size")
+                                    Button(action: {
+                                        if fontSize < 32 {
+                                            fontSize += 1
+                                        }
+                                    }) {
+                                        Text("+")
+                                    }
+                                    .buttonStyle(.bordered)
+                                    .buttonBorderShape(.roundedRectangle)
+                                }
+                            }
                 }
                     Spacer()
                 }
