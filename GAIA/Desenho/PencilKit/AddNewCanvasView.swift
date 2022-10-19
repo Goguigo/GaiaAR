@@ -18,11 +18,11 @@ struct AddNewCanvasView: View {
         NavigationView{
             Form{
                 Section{
-                    TextField("Canvas Title", text: $canvasTitle)
+                    TextField("Nome da tela", text: $canvasTitle)
                 }
             }
             .navigationViewStyle(StackNavigationViewStyle())
-            .navigationTitle(Text("Add New Canvas"))
+            .navigationTitle(Text("Nova tela"))
             .navigationBarItems(leading: Button(action: {
                 presentationMode.wrappedValue.dismiss()
             }, label: {
@@ -43,7 +43,7 @@ struct AddNewCanvasView: View {
                     self.presentationMode.wrappedValue.dismiss()
                 }
             }, label: {
-                Text("Save")
+                Text("Salvar")
             }))
         }
     }

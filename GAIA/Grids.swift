@@ -25,6 +25,7 @@ struct Novos: View {
                         Image("jogo7")
                             .resizable()
                             .frame(width: 250, height: 200)
+                            .cornerRadius(5)
                         Text("Meditação")
                             .font(.title)
                     }
@@ -36,6 +37,7 @@ struct Novos: View {
                         Image("jogo10")
                             .resizable()
                             .frame(width: 250, height: 200)
+                            .cornerRadius(5)
                         Text("Efeitos Especiais")
                             .font(.title)
                     }
@@ -47,6 +49,7 @@ struct Novos: View {
                         Image("jogo11")
                             .resizable()
                             .frame(width: 250, height: 200)
+                            .cornerRadius(5)
                         Text("Carrinho")
                             .font(.title)
                     }
@@ -58,6 +61,7 @@ struct Novos: View {
                         Image("jogo12")
                             .resizable()
                             .frame(width: 250, height: 200)
+                            .cornerRadius(5)
                         Text("Avião")
                             .font(.title)
                     }
@@ -69,6 +73,7 @@ struct Novos: View {
                         Image("app3")
                             .resizable()
                             .frame(width: 250, height: 200)
+                            .cornerRadius(5)
                         Text("Galeria")
                             .font(.title)
                     }
@@ -112,6 +117,7 @@ struct Tudo: View {
                             Image("jogo1")
                                 .resizable()
                                 .frame(width: 250, height: 200)
+                                .cornerRadius(5)
                             Text("Blocos Virtuais")
                                 .font(.title)
                         }
@@ -123,6 +129,7 @@ struct Tudo: View {
                             Image("jogo9")
                                 .resizable()
                                 .frame(width: 250, height: 200)
+                                .cornerRadius(5)
                             Text("Mini Floresta")
                                 .font(.title)
                         }
@@ -134,6 +141,7 @@ struct Tudo: View {
                             Image("jogo3")
                                 .resizable()
                                 .frame(width: 250, height: 200)
+                                .cornerRadius(5)
                             Text("Sistema Solar")
                                 .font(.title)
                         }
@@ -145,6 +153,7 @@ struct Tudo: View {
                             Image("jogo4")
                                 .resizable()
                                 .frame(width: 250, height: 200)
+                                .cornerRadius(5)
                             Text("Mini Cidade")
                                 .font(.title)
                         }
@@ -156,6 +165,7 @@ struct Tudo: View {
                             Image("jogo5")
                                 .resizable()
                                 .frame(width: 250, height: 200)
+                                .cornerRadius(5)
                             Text("Música")
                                 .font(.title)
                         }
@@ -167,6 +177,7 @@ struct Tudo: View {
                             Image("jogo6")
                                 .resizable()
                                 .frame(width: 250, height: 200)
+                                .cornerRadius(5)
                             Text("Mapa interativo")
                                 .font(.title)
                         }
@@ -178,6 +189,7 @@ struct Tudo: View {
                         Image("jogo7")
                             .resizable()
                             .frame(width: 250, height: 200)
+                            .cornerRadius(5)
                         Text("Meditação")
                             .font(.title)
                     }
@@ -189,6 +201,7 @@ struct Tudo: View {
                         Image("jogo10")
                             .resizable()
                             .frame(width: 250, height: 200)
+                            .cornerRadius(5)
                         Text("Efeitos Especiais")
                             .font(.title)
                     }
@@ -200,6 +213,7 @@ struct Tudo: View {
                         Image("jogo11")
                             .resizable()
                             .frame(width: 250, height: 200)
+                            .cornerRadius(5)
                         Text("Carrinho")
                             .font(.title)
                     }
@@ -212,6 +226,7 @@ struct Tudo: View {
                             Image("jogo12")
                                 .resizable()
                                 .frame(width: 250, height: 200)
+                                .cornerRadius(5)
                             Text("Avião")
                                 .font(.title)
                         }
@@ -223,6 +238,7 @@ struct Tudo: View {
                             Image("app1")
                                 .resizable()
                                 .frame(width: 250, height: 200)
+                                .cornerRadius(5)
                             Text("Desenhos")
                                 .font(.title)
                         }
@@ -234,6 +250,7 @@ struct Tudo: View {
                             Image("app2")
                                 .resizable()
                                 .frame(width: 250, height: 200)
+                                .cornerRadius(5)
                             Text("Editor de Texto")
                                 .font(.title)
                         }
@@ -245,6 +262,7 @@ struct Tudo: View {
                             Image("app3")
                                 .resizable()
                                 .frame(width: 250, height: 200)
+                                .cornerRadius(5)
                             Text("Galeria")
                                 .font(.title)
                         }
@@ -290,6 +308,7 @@ struct Educação: View {
                             Image("jogo9")
                                 .resizable()
                                 .frame(width: 250, height: 200)
+                                .cornerRadius(5)
                             Text("Mini Floresta")
                                 .font(.title)
                         }
@@ -301,6 +320,7 @@ struct Educação: View {
                             Image("jogo3")
                                 .resizable()
                                 .frame(width: 250, height: 200)
+                                .cornerRadius(5)
                             Text("Sistema Solar")
                                 .font(.title)
                         }
@@ -312,6 +332,7 @@ struct Educação: View {
                             Image("jogo4")
                                 .resizable()
                                 .frame(width: 250, height: 200)
+                                .cornerRadius(5)
                             Text("Mini Cidade")
                                 .font(.title)
                         }
@@ -323,6 +344,7 @@ struct Educação: View {
                             Image("jogo6")
                                 .resizable()
                                 .frame(width: 250, height: 200)
+                                .cornerRadius(5)
                             Text("Mapa interativo")
                                 .font(.title)
                         }
@@ -367,33 +389,11 @@ struct Jogos: View {
                             Image("jogo1")
                                 .resizable()
                                 .frame(width: 250, height: 200)
+                                .cornerRadius(5)
                             Text("Blocos Virtuais")
                                 .font(.title)
                         }
                     }
-                    Button (action: {
-                        self.list.lista = 10
-                    }) {
-                        VStack {
-                            Image("app1")
-                                .resizable()
-                                .frame(width: 250, height: 200)
-                            Text("Desenhos")
-                                .font(.title)
-                        }
-                        
-                    }
-                Button(action: {
-                    self.list.lista = 16
-                }) {
-                    VStack {
-                        Image("app3")
-                            .resizable()
-                            .frame(width: 250, height: 200)
-                        Text("Galeria")
-                            .font(.title)
-                    }
-                }
                 Button (action: {
                     self.list.lista = 14
                 }) {
@@ -401,6 +401,7 @@ struct Jogos: View {
                         Image("jogo11")
                             .resizable()
                             .frame(width: 250, height: 200)
+                            .cornerRadius(5)
                         Text("Carrinho")
                             .font(.title)
                     }
@@ -412,6 +413,7 @@ struct Jogos: View {
                         Image("jogo12")
                             .resizable()
                             .frame(width: 250, height: 200)
+                            .cornerRadius(5)
                         Text("Avião")
                             .font(.title)
                     }
@@ -577,6 +579,7 @@ struct Ciencia: View {
                             Image("jogo1")
                                 .resizable()
                                 .frame(width: 250, height: 200)
+                                .cornerRadius(5)
                             Text("Blocos Virtuais")
                                 .font(.title)
                         }
@@ -588,6 +591,7 @@ struct Ciencia: View {
                             Image("jogo9")
                                 .resizable()
                                 .frame(width: 250, height: 200)
+                                .cornerRadius(5)
                             Text("Mini Floresta")
                                 .font(.title)
                         }
@@ -599,6 +603,7 @@ struct Ciencia: View {
                             Image("jogo3")
                                 .resizable()
                                 .frame(width: 250, height: 200)
+                                .cornerRadius(5)
                             Text("Sistema Solar")
                                 .font(.title)
                         }
@@ -610,6 +615,7 @@ struct Ciencia: View {
                             Image("jogo4")
                                 .resizable()
                                 .frame(width: 250, height: 200)
+                                .cornerRadius(5)
                             Text("Mini Cidade")
                                 .font(.title)
                         }
@@ -621,6 +627,7 @@ struct Ciencia: View {
                             Image("jogo6")
                                 .resizable()
                                 .frame(width: 250, height: 200)
+                                .cornerRadius(5)
                             Text("Mapa interativo")
                                 .font(.title)
                         }
@@ -665,6 +672,7 @@ struct AR: View {
                             Image("jogo1")
                                 .resizable()
                                 .frame(width: 250, height: 200)
+                                .cornerRadius(5)
                             Text("Blocos Virtuais")
                                 .font(.title)
                         }
@@ -676,6 +684,7 @@ struct AR: View {
                             Image("jogo9")
                                 .resizable()
                                 .frame(width: 250, height: 200)
+                                .cornerRadius(5)
                             Text("Mini Floresta")
                                 .font(.title)
                         }
@@ -687,6 +696,7 @@ struct AR: View {
                             Image("jogo3")
                                 .resizable()
                                 .frame(width: 250, height: 200)
+                                .cornerRadius(5)
                             Text("Sistema Solar")
                                 .font(.title)
                         }
@@ -698,6 +708,7 @@ struct AR: View {
                             Image("jogo4")
                                 .resizable()
                                 .frame(width: 250, height: 200)
+                                .cornerRadius(5)
                             Text("Mini Cidade")
                                 .font(.title)
                         }
@@ -709,6 +720,7 @@ struct AR: View {
                             Image("jogo5")
                                 .resizable()
                                 .frame(width: 250, height: 200)
+                                .cornerRadius(5)
                             Text("Música")
                                 .font(.title)
                         }
@@ -720,6 +732,7 @@ struct AR: View {
                             Image("jogo6")
                                 .resizable()
                                 .frame(width: 250, height: 200)
+                                .cornerRadius(5)
                             Text("Mapa interativo")
                                 .font(.title)
                         }
@@ -731,6 +744,7 @@ struct AR: View {
                         Image("jogo7")
                             .resizable()
                             .frame(width: 250, height: 200)
+                            .cornerRadius(5)
                         Text("Meditação")
                             .font(.title)
                     }
@@ -742,6 +756,7 @@ struct AR: View {
                         Image("jogo10")
                             .resizable()
                             .frame(width: 250, height: 200)
+                            .cornerRadius(5)
                         Text("Efeitos Especiais")
                             .font(.title)
                     }
@@ -810,6 +825,7 @@ struct Aplicativos: View {
                             Image("app1")
                                 .resizable()
                                 .frame(width: 250, height: 200)
+                                .cornerRadius(5)
                             Text("Desenhos")
                                 .font(.title)
                         }
@@ -822,11 +838,11 @@ struct Aplicativos: View {
                             Image("app2")
                                 .resizable()
                                 .frame(width: 250, height: 200)
-                            Text("Editor de Texto")
-                                .font(.title)
-                        }
-                        
+                                .cornerRadius(5)
+                        Text("Texto")
+                            .font(.title)
                     }
+                }
                 Button(action: {
                     self.list.lista = 16
                 }) {
@@ -834,6 +850,7 @@ struct Aplicativos: View {
                         Image("app3")
                             .resizable()
                             .frame(width: 250, height: 200)
+                            .cornerRadius(5)
                         Text("Galeria")
                             .font(.title)
                     }

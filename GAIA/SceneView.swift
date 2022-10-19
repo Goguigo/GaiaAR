@@ -286,7 +286,7 @@ struct SceneView: View {
                                     if isActive == false {
                                         isActive = true
                                         self.list.action2.send()
-                                        DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(1), execute: {
+                                        DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(Int(speed)), execute: {
                                             isActive = false
                                         })
                                     }
@@ -301,7 +301,9 @@ struct SceneView: View {
                                         if isActive == false {
                                             isActive = true
                                             self.list.flipTriggerSignal.send()
-                                            isActive = false
+                                            DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(Int(speed)), execute: {
+                                                isActive = false
+                                            })
                                         }
                                     }) {
                                         Image(systemName: "arrow.up.square")
@@ -319,7 +321,7 @@ struct SceneView: View {
                                         if isActive == false {
                                             isActive = true
                                             self.list.action4.send()
-                                            DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(1), execute: {
+                                            DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(Int(speed)), execute: {
                                                 isActive = false
                                             })
                                         }
@@ -334,7 +336,7 @@ struct SceneView: View {
                                     if isActive == false {
                                         isActive = true
                                         self.list.action3.send()
-                                        DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(1), execute: {
+                                        DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(Int(speed)), execute: {
                                             isActive = false
                                         })
                                     }
@@ -367,7 +369,7 @@ struct SceneView: View {
                                         if isActive == false {
                                             isActive = true
                                             self.list.action2.send()
-                                            DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(1), execute: {
+                                            DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(Int(speed)), execute: {
                                                 isActive = false
                                             })
                                         }
@@ -382,7 +384,9 @@ struct SceneView: View {
                                             if isActive == false {
                                                 isActive = true
                                                 self.list.flipTriggerSignal.send()
-                                                isActive = false
+                                                DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(Int(speed)), execute: {
+                                                    isActive = false
+                                                })
                                             }
                                         }) {
                                             Image(systemName: "arrow.up.square")
@@ -400,7 +404,7 @@ struct SceneView: View {
                                             if isActive == false {
                                                 isActive = true
                                                 self.list.action4.send()
-                                                DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(1), execute: {
+                                                DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(Int(speed)), execute: {
                                                     isActive = false
                                                 })
                                             }
@@ -415,7 +419,7 @@ struct SceneView: View {
                                         if isActive == false {
                                             isActive = true
                                             self.list.action3.send()
-                                            DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(1), execute: {
+                                            DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(Int(speed)), execute: {
                                                 isActive = false
                                             })
                                         }

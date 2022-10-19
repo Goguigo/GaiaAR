@@ -9,6 +9,8 @@ import SwiftUI
 import CoreData
 
 struct GalleryView: View {
+    @EnvironmentObject var list: Potato
+    
     @Environment(\.managedObjectContext) private var viewContext
 
     @FetchRequest(entity: Drawing.entity(), sortDescriptors: []) var drawings: FetchedResults<Drawing>
@@ -16,6 +18,7 @@ struct GalleryView: View {
     @State private var showSheet = false
 
     var body: some View {
+        
         NavigationView{
             VStack{
                 List {
@@ -31,7 +34,7 @@ struct GalleryView: View {
                     }, label: {
                         HStack{
                             Image(systemName: "plus")
-                            Text("Add Canvas")
+                            Text("Nova tela...")
                         }
                     })
                     .foregroundColor(.blue)
@@ -39,17 +42,24 @@ struct GalleryView: View {
                         AddNewCanvasView().environment(\.managedObjectContext, viewContext)
                     })
                 }
-                .navigationTitle(Text("Drawing"))
+                .navigationTitle(Text("Galeria"))
                 .toolbar {
                     EditButton()
                 }
-                
+                Button {
+                    list.lista = 0
+                } label: {
+                    Image(systemName: "return")
+                        .resizable()
+                        .frame(width: 25, height: 25)
+                }
+
                 
             }
             VStack{
                 Image(systemName: "scribble.variable")
                     .font(.largeTitle)
-                Text("No canvas has been selected")
+                Text("Nenhuma tela selecionada")
                     .font(.title)
             }
         }
