@@ -12,5 +12,3 @@ Clonado de https://github.com/azamsharp/PaintApp e altamente modificado para fun
 ## Recursos USDZ
 Disponíveis no Reality Composer ou criados por mim no Blender.
 
-## Github:
-https://github.com/Goguigo/GaiaAR/
