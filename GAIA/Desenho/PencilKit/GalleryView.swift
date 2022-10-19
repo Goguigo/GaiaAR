@@ -53,13 +53,11 @@ struct GalleryView: View {
                         .resizable()
                         .frame(width: 25, height: 25)
                 }
-
+                .padding()
                 
             }
             VStack{
-                Image(systemName: "scribble.variable")
-                    .font(.largeTitle)
-                Text("Nenhuma tela selecionada")
+                Label("Nenhuma tela selecionada", systemImage: "applepencil")
                     .font(.title)
             }
         }

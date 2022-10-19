@@ -201,14 +201,14 @@
 			path = RealityKit;
 			sourceTree = "<group>";
 		};
-		DA7C2D4228EE0AAF00EE479D /* UIKit */ = {
+		DA7C2D4228EE0AAF00EE479D /* Desenhos */ = {
 			isa = PBXGroup;
 			children = (
 				DA20929D2832DC1300AC8C39 /* CanvasView.swift */,
 				DA20929E2832DC1300AC8C39 /* ColorPickerView.swift */,
 				DA20929F2832DC1300AC8C39 /* Information.swift */,
 			);
-			path = UIKit;
+			path = Desenhos;
 			sourceTree = "<group>";
 		};
 		DA8A8BE527E279BB0029C10E = {
@@ -244,7 +244,7 @@
 				DABB04D128F9ED4B00C6DAC6 /* CloudKit */,
 				DA7C2D4128EE093600EE479D /* RealityKit */,
 				DA4A50F528F8831800FE24ED /* PencilKit */,
-				DA7C2D4228EE0AAF00EE479D /* UIKit */,
+				DA7C2D4228EE0AAF00EE479D /* Desenhos */,
 				DA8A8BF727E279BC0029C10E /* Assets.xcassets */,
 				DA4A50F228F8828900FE24ED /* Galeria.xcdatamodeld */,
 				DAC81BF127EA96DB007D5921 /* Licensa.md */,

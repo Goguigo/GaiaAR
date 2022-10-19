@@ -8,7 +8,6 @@
 import SwiftUI
 import RealityKit
 import MessageUI
-import SpriteKit
 import CoreData
 import PencilKit
 

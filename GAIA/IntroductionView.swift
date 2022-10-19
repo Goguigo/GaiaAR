@@ -20,19 +20,25 @@ struct IntroductionView: View {
                 Spacer()
                     .frame(height: 20)
                 Text("Para iniciar as experiências de Realidade Aumentada, mova a câmera do dispositivo em uma superfície plana e bem iluminada.")
-                Spacer()
-                    .frame(height: 20)
-                Text("Esse aplicativo foi feito pelo GAIA (Grupo de Ações e Investigações Autopoiéticas) com o objetivo de ajudar crianças diagnosticadas com autismo a se expressarem livremente, a abordagem é simples e incentiva o raciocínio lógico, a comunicação e ajuda na construção da capacidade de dizer eu para mim mesmo.")
-                Spacer()
-                    .frame(height: 20)
-                Link("Mais sobre a plataforma e o projeto GAIA",
-                     destination: URL(string: "https://sites.google.com/view/gaia-org/projeto-da-plataforma-gaiaar")!)
+                Group {
+                    Spacer()
+                        .frame(height: 20)
+                    Text("Esse aplicativo foi desenvolvido pelo GAIA (Grupo de Ações e Investigações Autopoiéticas) com o objetivo de ajudar crianças diagnosticadas com autismo a se expressarem livremente, a abordagem é simples e desperta o raciocínio, a comunicação e ajuda na construção da capacidade de dizer eu para mim mesmo.")
+                    Spacer()
+                        .frame(height: 20)
+                    Link("Mais sobre a plataforma e o projeto GAIA",
+                         destination: URL(string: "https://sites.google.com/view/gaia-org/projeto-da-plataforma-gaiaar")!)
+                }
                 Spacer()
                     .frame(height: 20)
                 Button("Ok!") {
                     self.viewRouter.currentPage = "homeView"
                 }
                 .buttonStyle(.borderedProminent)
+                Spacer()
+                    .frame(height: 20)
+                Text("Versão 3.0")
+                    .font(.footnote)
             }
         }
         .padding()

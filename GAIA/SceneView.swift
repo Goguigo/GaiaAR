@@ -7,7 +7,6 @@
 
 import SwiftUI
 import RealityKit
-import ARKit
 import UIKit
 import AVFoundation
 import MessageUI
@@ -39,7 +38,7 @@ struct SceneView: View {
      @State var isHidden: Bool = true
      @State var isActive: Bool = false
     @State var propId: Int = 0
-    @State var speed: Double = 350
+    @State var speed: Double = 600
     let persistenceController = PersistenceController.shared
     var body: some View {
         if self.list.lista == 0 {
