@@ -15,9 +15,11 @@ import CoreData
 import PencilKit
 
 class Potato: ObservableObject {
+    @Published var isCatalyst = false
     @Published var lista: Int = 0
     @Published var grid: Int = 0
     let flipTriggerSignal = PassthroughSubject<Void, Never>()
+    @Published var fontSize: CGFloat = 13
     let action2 = PassthroughSubject<Void, Never>()
     let action3 = PassthroughSubject<Void, Never>()
     let action4 = PassthroughSubject<Void, Never>()

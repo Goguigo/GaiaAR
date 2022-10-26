@@ -27,7 +27,6 @@ struct ShareText: Identifiable {
 struct TextEditorView: View {
     @StateObject private var vm = CloudKitCrudBootcampViewModel()
     @EnvironmentObject var list: Potato
-    @State var fontSize: CGFloat = 13
     @State var shadowStyle: Bool = false
     @State private var sendEmail = false
     @State var shareText: ShareText?
@@ -56,6 +55,9 @@ struct TextEditorView: View {
                         .buttonBorderShape(.roundedRectangle)
                         Spacer()
                             .frame(width: 20)
+#if targetEnvironment(macCatalyst)
+                        fontEditor()
+                        #endif
                     }
                     Button {
                         vm.addButtonPressed()
@@ -93,14 +95,14 @@ struct TextEditorView: View {
                 Divider()
                 VStack {
                     TextField("Toque aqui para editar...", text: $vm.text)
-                        .font(.system(size: fontSize))
+                        .font(.system(size: list.fontSize))
                         .toolbar {
                             ToolbarItemGroup(placement: .keyboard) {
                                 Group {
                                     Spacer()
                                     Button(action: {
-                                        if fontSize >= 0 {
-                                            fontSize -= 1
+                                        if list.fontSize >= 0 {
+                                            list.fontSize -= 1
                                         }
                                     }) {
                                         Text("-")
@@ -109,8 +111,8 @@ struct TextEditorView: View {
                                     .buttonBorderShape(.roundedRectangle)
                                     Image(systemName: "textformat.size")
                                     Button(action: {
-                                        if fontSize < 32 {
-                                            fontSize += 1
+                                        if list.fontSize < 32 {
+                                            list.fontSize += 1
                                         }
                                     }) {
                                         Text("+")
@@ -135,5 +137,34 @@ struct TextEditorView: View {
 struct TextEditorView_Previews: PreviewProvider {
     static var previews: some View {
         TextEditorView()
+    }
+}
+
+struct fontEditor: View {
+    @EnvironmentObject var list: Potato
+    var body: some View {
+        HStack {
+            Button(action: {
+                if list.fontSize >= 0 {
+                    list.fontSize -= 1
+                }
+            }) {
+                Text("-")
+            }
+            .buttonStyle(.bordered)
+            .buttonBorderShape(.roundedRectangle)
+            Image(systemName: "textformat.size")
+            Button(action: {
+                if list.fontSize < 32 {
+                    list.fontSize += 1
+                }
+            }) {
+                Text("+")
+            }
+            .buttonStyle(.bordered)
+            .buttonBorderShape(.roundedRectangle)
+            Spacer()
+                .frame(width: 20)
+        }
     }
 }

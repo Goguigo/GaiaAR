@@ -4,7 +4,6 @@
 //
 //  Created by Rodrigo Pellanda on 05/08/22.
 //
-
 import SwiftUI
 
 struct DocumentationView: View {

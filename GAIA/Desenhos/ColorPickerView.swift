@@ -5,7 +5,7 @@ import UIKit
 
 struct ColorPickerView: View {
     
-    let colors = [Color.red, Color.orange, Color.green, Color.blue, Color.purple, Color.indigo, Color.pink, Color.cyan, Color.brown, Color.mint, Color.gray]
+    let colors = [Color.red, Color.orange, Color.green, Color.blue, Color.purple, Color.indigo, Color.pink]
     @Binding var selectedColor: Color
     let columns = [
             GridItem(.adaptive(minimum: 10))

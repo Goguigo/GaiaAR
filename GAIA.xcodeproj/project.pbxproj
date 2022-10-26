@@ -30,7 +30,7 @@
 		DA4D200528FC4B8F00E5FA1E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4D200428FC4B8F00E5FA1E /* ContentView.swift */; };
 		DA4D200728FC4B9000E5FA1E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA4D200628FC4B9000E5FA1E /* Assets.xcassets */; };
 		DA4D200A28FC4B9000E5FA1E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA4D200928FC4B9000E5FA1E /* Preview Assets.xcassets */; };
-		DA4D200D28FC4B9000E5FA1E /* Gaia Watch Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = DA4D200028FC4B8F00E5FA1E /* Gaia Watch Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		DA4D200D28FC4B9000E5FA1E /* Gaia Watch Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = DA4D200028FC4B8F00E5FA1E /* Gaia Watch Watch App.app */; platformFilter = ios; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		DA4D201328FC4CEF00E5FA1E /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4D201228FC4CEF00E5FA1E /* ListView.swift */; };
 		DA4D201628FC4F6D00E5FA1E /* CloudKitUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4D201528FC4F6D00E5FA1E /* CloudKitUtility.swift */; };
 		DA4D201928FC514D00E5FA1E /* StatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4D201828FC514D00E5FA1E /* StatusView.swift */; };
@@ -59,6 +59,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		DA427A23290586130002F036 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DA4D200E28FC4B9000E5FA1E /* Embed Watch Content */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -95,6 +105,8 @@
 		DA2A8474286E28F200DA341F /* IntroductionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroductionView.swift; sourceTree = "<group>"; };
 		DA2D00BC2889B328009D4D2E /* NewHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewHomeView.swift; sourceTree = "<group>"; };
 		DA356F0928BD32BD00C163BB /* Experience6.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Experience6.rcproject; sourceTree = "<group>"; };
+		DA427A0C290586120002F036 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		DA427A0E290586120002F036 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 		DA441A9127E3CA8B00CDB162 /* SceneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneView.swift; sourceTree = "<group>"; };
 		DA441A9527E3D07B00CDB162 /* Experience3.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Experience3.rcproject; sourceTree = "<group>"; };
 		DA4625C127E8EED200B8F937 /* Experience4.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Experience4.rcproject; sourceTree = "<group>"; };
@@ -147,6 +159,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DA427A0B290586120002F036 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DA427A0C290586120002F036 /* WidgetKit.framework */,
+				DA427A0E290586120002F036 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		DA4A50F528F8831800FE24ED /* PencilKit */ = {
 			isa = PBXGroup;
 			children = (
@@ -216,6 +237,7 @@
 			children = (
 				DA8A8BF027E279BB0029C10E /* GAIA */,
 				DA4D200128FC4B8F00E5FA1E /* Gaia Watch Watch App */,
+				DA427A0B290586120002F036 /* Frameworks */,
 				DA8A8BEF27E279BB0029C10E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -299,6 +321,7 @@
 				DA8A8BEC27E279BB0029C10E /* Resources */,
 				DAC4EC5127E91ABE00D90066 /* Embed App Clips */,
 				DA4D200E28FC4B9000E5FA1E /* Embed Watch Content */,
+				DA427A23290586130002F036 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
@@ -317,7 +340,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1400;
+				LastSwiftUpdateCheck = 1410;
 				LastUpgradeCheck = 1320;
 				TargetAttributes = {
 					DA4D1FFF28FC4B8F00E5FA1E = {
@@ -422,6 +445,7 @@
 /* Begin PBXTargetDependency section */
 		DA4D200C28FC4B9000E5FA1E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
+			platformFilter = ios;
 			target = DA4D1FFF28FC4B8F00E5FA1E /* Gaia Watch Watch App */;
 			targetProxy = DA4D200B28FC4B9000E5FA1E /* PBXContainerItemProxy */;
 		};
@@ -436,7 +460,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CODE_SIGN_ENTITLEMENTS = "Gaia Watch Watch App/Gaia Watch Watch App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 1.1;
 				DEVELOPMENT_ASSET_PATHS = "\"Gaia Watch Watch App/Preview Content\"";
 				DEVELOPMENT_TEAM = XAFTQP97UL;
 				ENABLE_PREVIEWS = YES;
@@ -448,7 +472,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.goguigo.gaiaar.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
@@ -468,7 +492,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CODE_SIGN_ENTITLEMENTS = "Gaia Watch Watch App/Gaia Watch Watch App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 1.1;
 				DEVELOPMENT_ASSET_PATHS = "\"Gaia Watch Watch App/Preview Content\"";
 				DEVELOPMENT_TEAM = XAFTQP97UL;
 				ENABLE_PREVIEWS = YES;
@@ -480,7 +504,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.goguigo.gaiaar.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
@@ -616,7 +640,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = GAIA/GAIA.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3.0;
+				CURRENT_PROJECT_VERSION = 3.1;
 				DEVELOPMENT_ASSET_PATHS = "\"GAIA/Preview Content\"";
 				DEVELOPMENT_TEAM = XAFTQP97UL;
 				ENABLE_PREVIEWS = YES;
@@ -637,12 +661,12 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 3.0;
+				MARKETING_VERSION = 3.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.goguigo.gaiaar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
-				SUPPORTS_MACCATALYST = NO;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -657,7 +681,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = GAIA/GAIA.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3.0;
+				CURRENT_PROJECT_VERSION = 3.1;
 				DEVELOPMENT_ASSET_PATHS = "\"GAIA/Preview Content\"";
 				DEVELOPMENT_TEAM = XAFTQP97UL;
 				ENABLE_PREVIEWS = YES;
@@ -678,12 +702,12 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 3.0;
+				MARKETING_VERSION = 3.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.goguigo.gaiaar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
-				SUPPORTS_MACCATALYST = NO;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

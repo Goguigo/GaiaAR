@@ -15,6 +15,7 @@ struct NewHomeView: View {
             GridItem(.adaptive(minimum: 250))
         ]
     var body: some View {
+#if !targetEnvironment(macCatalyst)
         NavigationView {
             VStack {
                 List {
@@ -37,6 +38,25 @@ struct NewHomeView: View {
                             Label("Ciências", systemImage: "globe.americas.fill")
                         }
                     }
+                        Section(header: Text("Apps")) {
+                            NavigationLink(destination: Aplicativos()) {
+                                Label("Criatividade", systemImage: "paintbrush.fill")
+                            }
+                        }
+                        Section(header: Text("Outros")) {
+                            NavigationLink(destination: DocumentationView()) {
+                                Label("Documentação", systemImage: "book.fill")
+                            }
+                        }
+                }
+            }
+            .navigationTitle("GaiaAR")
+            Tudo()
+        }
+#else
+        NavigationView {
+            VStack {
+                List {
                     Section(header: Text("Apps")) {
                         NavigationLink(destination: Aplicativos()) {
                             Label("Criatividade", systemImage: "paintbrush.fill")
@@ -50,8 +70,10 @@ struct NewHomeView: View {
                 }
             }
             .navigationTitle("GaiaAR")
-            Tudo()
+            .opacity(10)
+            Aplicativos()
         }
+#endif
     }
 }
 
