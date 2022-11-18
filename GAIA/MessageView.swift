@@ -67,3 +67,4 @@ struct MessageView_Previews: PreviewProvider {
         MessageView()
     }
 }
+
