@@ -45,6 +45,7 @@ struct SceneView: View {
     var body: some View {
         if self.list.lista == 0 {
             NewHomeView()
+                .navigationBarBackButtonHidden()
         }
         if self.list.lista == 1 {
             ZStack {
@@ -221,53 +222,7 @@ struct SceneView: View {
                 .edgesIgnoringSafeArea(.all)
             } else {
                 if self.list.lista == 13 {
-                    ZStack {
-                        ARViewContainer11(model: list)
-                        HStack {
-                            Button(action: {
-                                self.list.lista = 0
-                            }) {
-                                Image(systemName: "return")
-                            }
-                            .buttonBorderShape(.roundedRectangle)
-                            .buttonStyle(.bordered)
-                            .font(.largeTitle)
-                            .frame(maxHeight: .infinity, alignment: .bottomTrailing)
-                            Spacer()
-                            VStack {
-                                Spacer()
-                                HStack {
-                                    Spacer()
-                                    Button(action: {
-                                        self.list.action9.send()
-                                    }) {
-                                        Image(systemName: "moon.stars.fill")
-                                    }
-                                    .buttonBorderShape(.roundedRectangle)
-                                    .buttonStyle(.bordered)
-                                    .font(.largeTitle)
-                                    Button(action: {
-                                        self.list.action8.send()
-                                    }) {
-                                        Image(systemName: "cloud.fill")
-                                    }
-                                    .buttonBorderShape(.roundedRectangle)
-                                    .buttonStyle(.bordered)
-                                    .font(.largeTitle)
-                                    Button(action: {
-                                        self.list.action10.send()
-                                    }) {
-                                        Image(systemName: "drop.fill")
-                                    }
-                                    .buttonBorderShape(.roundedRectangle)
-                                    .buttonStyle(.bordered)
-                                    .font(.largeTitle)
-                                }
-                            }
-                        }
-                        .padding()
-                    }
-                    .edgesIgnoringSafeArea(.all)
+//              MARK: Angry Birds
                 } else {
                     if self.list.lista == 14 {
                         ZStack {
@@ -438,6 +393,14 @@ struct SceneView: View {
                             if self.list.lista == 16 {
                                 GalleryView()
                                     .environment(\.managedObjectContext, persistenceController.container.viewContext)
+                            } else {
+                                if self.list.lista == 17 {
+                                    MessageView()
+                                } else {
+                                    if list.lista == 18 {
+                                        FoodView()
+                                    }
+                                }
                             }
                         }
                     }
@@ -629,43 +592,6 @@ struct ARViewContainer10: UIViewRepresentable {
     
     func updateUIView(_ uiView: ARView, context: Context) {}
     
-}
-struct ARViewContainer11: UIViewRepresentable {
-    let model: Potato
-    
-    func makeCoordinator() -> Coordinator {
-        Coordinator()
-    }
-    func makeUIView(context: Context) -> ARView {
-        
-        let arView = ARView(frame: .zero)
-        
-        // Load the "Box" scene from the "Experience" Reality File
-        let boxAnchor = try! Experience10.loadBox()
-        
-        // Add the box anchor to the scene
-        arView.scene.anchors.append(boxAnchor)
-        
-        model.action8.sink {
-            boxAnchor.notifications.sky.post()
-        }.store(in: &context.coordinator.subscriptions)
-        
-        model.action9.sink {
-            boxAnchor.notifications.planets.post()
-        }.store(in: &context.coordinator.subscriptions)
-        
-        model.action10.sink {
-            boxAnchor.notifications.dive.post()
-        }.store(in: &context.coordinator.subscriptions)
-        
-        return arView
-        
-    }
-    
-    func updateUIView(_ uiView: ARView, context: Context) {}
-    class Coordinator: NSObject {
-        var subscriptions = Set<AnyCancellable>()
-    }
 }
 struct ARViewContainer12: UIViewRepresentable {
     let model: Potato

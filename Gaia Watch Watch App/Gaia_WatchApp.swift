@@ -12,7 +12,7 @@ struct Gaia_Watch_Watch_AppApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
-                .environmentObject(CloudKitUserBootcampViewModel())
+                .environmentObject(CloudKitCrudBootcampViewModel())
         }
     }
 }

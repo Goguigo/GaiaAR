@@ -12,28 +12,26 @@ struct StatusView: View {
     var body: some View {
         if status.isSignedInToiCloud == true {
             VStack {
-                Text("Sincronização:")
-                    .font(.title3)
                 Spacer()
                 Label("Sincronizado", systemImage: "checmark.icloud.fill")
-                    .foregroundColor(.red)
-                    .font(.title2)
+                    .foregroundColor(.green)
+                    .font(.title3)
                 Spacer()
-                Text("GaiaAR, versão 3.0")
+                Text("GaiaAR versão 4.0")
                     .font(.footnote)
             }
+            .navigationTitle("iCloud")
         } else {
             VStack {
-                Text("Sincronização:")
-                    .font(.title3)
                 Spacer()
                 Label("Erro", systemImage: "xmark.icloud.fill")
                     .foregroundColor(.red)
-                    .font(.title2)
+                    .font(.title3)
                 Spacer()
-                Text("GaiaAR, versão 3.0")
+                Text("GaiaAR versão 4.0")
                     .font(.footnote)
             }
+            .navigationTitle("iCloud")
         }
     }
 }

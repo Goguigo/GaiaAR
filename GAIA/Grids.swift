@@ -30,18 +30,6 @@ struct Novos: View {
                             .font(.title)
                     }
                 }
-                Button(action: {
-                    self.list.lista = 13
-                }) {
-                    VStack {
-                        Image("jogo10")
-                            .resizable()
-                            .frame(width: 250, height: 200)
-                            .cornerRadius(5)
-                        Text("Efeitos Especiais")
-                            .font(.title)
-                    }
-                }
                 Button (action: {
                     self.list.lista = 14
                 }) {
@@ -191,18 +179,6 @@ struct Tudo: View {
                             .frame(width: 250, height: 200)
                             .cornerRadius(5)
                         Text("Meditação")
-                            .font(.title)
-                    }
-                }
-                Button(action: {
-                    self.list.lista = 13
-                }) {
-                    VStack {
-                        Image("jogo10")
-                            .resizable()
-                            .frame(width: 250, height: 200)
-                            .cornerRadius(5)
-                        Text("Efeitos Especiais")
                             .font(.title)
                     }
                 }
@@ -749,18 +725,6 @@ struct AR: View {
                             .font(.title)
                     }
                 }
-                Button(action: {
-                    self.list.lista = 13
-                }) {
-                    VStack {
-                        Image("jogo10")
-                            .resizable()
-                            .frame(width: 250, height: 200)
-                            .cornerRadius(5)
-                        Text("Efeitos Especiais")
-                            .font(.title)
-                    }
-                }
                 Button (action: {
                     self.list.lista = 14
                 }) {
@@ -878,6 +842,7 @@ struct Aplicativos: View {
                 }
             }
         }
+        
     }
 }
 struct grid_Previews: PreviewProvider {

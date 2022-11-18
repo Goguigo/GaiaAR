@@ -111,19 +111,26 @@ struct CloudKitCrudBootcamp: View {
     var body: some View {
         NavigationStack {
             VStack {
+                #if !os(watchOS)
                 header
+                #endif
                 List {
                     ForEach(vm.items, id: \.self) { fruit in
                         
                         Text(fruit.name)
                         
                     }
+                    #if !os(watchOS)
                     .onDelete(perform: vm.deleteItem)
+                    #endif
                 }
+#if !os(watchOS)
                 .listStyle(PlainListStyle())
                 .toolbar {
                     EditButton()
+                
                 }
+#endif
             }
             .padding()
             .navigationBarBackButtonHidden(false)

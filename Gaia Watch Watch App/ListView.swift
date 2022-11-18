@@ -11,16 +11,23 @@ struct ListView: View {
     @StateObject private var vm = CloudKitCrudBootcampViewModel()
     var body: some View {
         NavigationView {
-            Label("Recentes", systemImage: "clock.arrow.circlepath")
-                .foregroundColor(.blue)
-            List {
-                ForEach(vm.items, id: \.self) { fruit in
-                    
-                    Text(fruit.name)
-                    
+            VStack {
+                Label("Recentes", systemImage: "clock.arrow.circlepath")
+                    .foregroundColor(.blue)
+                List {
+                    ForEach(vm.items, id: \.self) { fruit in
+                        
+                        Text(fruit.name)
+
+                    }
+                    Button {
+                        vm.fetchItems()
+                    } label: {
+                        Label("Atualizar", systemImage: "cloud.fill")
+                    }
                 }
+                .navigationTitle("Textos")
             }
-            .navigationTitle("Textos:")
         }
     }
 }

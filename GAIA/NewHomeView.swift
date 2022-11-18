@@ -20,7 +20,9 @@ struct NewHomeView: View {
             VStack {
                 List {
                     Section(header: Text("Coleções")) {
-                        NavigationLink(destination: Novos()) {
+                        NavigationLink(destination:
+                                        Novos()
+                        ) {
                             Label("Novos", systemImage: "sparkles")
                         }
                         NavigationLink(destination: Tudo()) {
@@ -42,15 +44,22 @@ struct NewHomeView: View {
                             NavigationLink(destination: Aplicativos()) {
                                 Label("Criatividade", systemImage: "paintbrush.fill")
                             }
+                            NavigationLink(destination: AvatarHomeView()) {
+                                Label("Avatares", systemImage: "person.crop.circle.fill")
+                            }
                         }
                         Section(header: Text("Outros")) {
                             NavigationLink(destination: DocumentationView()) {
                                 Label("Documentação", systemImage: "book.fill")
                             }
+                            NavigationLink(destination: DonationsView()) {
+                                Label("Doações", systemImage: "banknote.fill")
+                            }
                         }
                 }
             }
             .navigationTitle("GaiaAR")
+            .navigationBarBackButtonHidden()
             Tudo()
         }
 #else
@@ -58,7 +67,8 @@ struct NewHomeView: View {
             VStack {
                 List {
                     Section(header: Text("Apps")) {
-                        NavigationLink(destination: Aplicativos()) {
+                        NavigationLink(destination: Aplicativos()
+                        ) {
                             Label("Criatividade", systemImage: "paintbrush.fill")
                         }
                     }
@@ -70,7 +80,7 @@ struct NewHomeView: View {
                 }
             }
             .navigationTitle("GaiaAR")
-            .opacity(10)
+            .navigationBarBackButtonHidden()
             Aplicativos()
         }
 #endif
