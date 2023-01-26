@@ -15,7 +15,7 @@ struct aApp: App {
                 .environmentObject(ViewRouter())
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
                 .onOpenURL { url in
-                    print("URL Open!!")
+                    print("URL Open!")
                 }
                 
         }
