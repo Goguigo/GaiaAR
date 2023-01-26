@@ -1,7 +1,7 @@
 # Plataforma GaiaAR
 
 A plataforma GaiaAR é uma plataforma desenvolvida pelo GAIA (Grupo de ações e investigações autopiéticas) para iOS e macOS com o objetivo de auxiliar os estudos de epistemologia complexa do autismo.
-A plataforma consiste de uma série de jogos em realidade aumentada e aplicativos interativos criados por nós e especialmente afiados para uso de crianças diagnosticadas com autismo.
+A plataforma contém uma série de jogos em realidade aumentada e aplicativos interativos criados por nós e especialmente afiados para uso de crianças diagnosticadas com autismo.
 Código pode ser clonado e compilado no Xcode, alternativamente, a página de lançamentos também contém um zip com o código fonte.
 
 ## GAIA Watch
