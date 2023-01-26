@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DA0CCF07291985EA005F0419 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0CCF06291985EA005F0419 /* MessageView.swift */; };
 		DA0E9BAC290046F40073AB94 /* DrawingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0E9BAB290046F40073AB94 /* DrawingView.swift */; };
 		DA0E9BAE290047120073AB94 /* DrawingCanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0E9BAD290047120073AB94 /* DrawingCanvasView.swift */; };
 		DA0E9BB0290047590073AB94 /* DrawingCanvasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0E9BAF290047590073AB94 /* DrawingCanvasViewController.swift */; };
@@ -37,8 +36,6 @@
 		DA4D200D28FC4B9000E5FA1E /* Gaia Watch Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = DA4D200028FC4B8F00E5FA1E /* Gaia Watch Watch App.app */; platformFilter = ios; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		DA4D201328FC4CEF00E5FA1E /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4D201228FC4CEF00E5FA1E /* ListView.swift */; };
 		DA4D201928FC514D00E5FA1E /* StatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4D201828FC514D00E5FA1E /* StatusView.swift */; };
-		DA5B6EE6291AE0AA00D6D964 /* Cuidar.sks in Resources */ = {isa = PBXBuildFile; fileRef = DA5B6EE5291AE0AA00D6D964 /* Cuidar.sks */; };
-		DA5B6EE8291AE0B900D6D964 /* Alimentar.sks in Resources */ = {isa = PBXBuildFile; fileRef = DA5B6EE7291AE0B900D6D964 /* Alimentar.sks */; };
 		DA7398B4289DB9DF0026667C /* DocumentationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7398B3289DB9DF0026667C /* DocumentationView.swift */; };
 		DA74C63B289C4ECC00F8B7FF /* Grids.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA74C63A289C4ECC00F8B7FF /* Grids.swift */; };
 		DA8A8BF427E279BB0029C10E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8A8BF327E279BB0029C10E /* ContentView.swift */; };
@@ -50,7 +47,6 @@
 		DA9B7BBB293E323500B5E9E3 /* StoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9B7BBA293E323500B5E9E3 /* StoreManager.swift */; };
 		DA9BFE762854D2E800F59D0B /* Experience9.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = DAEED2202854CA5E00D63DC4 /* Experience9.rcproject */; };
 		DA9BFEB42854DDB300F59D0B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9BFEB32854DDB300F59D0B /* AppDelegate.swift */; };
-		DAA3855F292583A100E4B4EF /* FoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA3855E292583A100E4B4EF /* FoodView.swift */; };
 		DABA582F2916AD7500C7768C /* WorkoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABA582E2916AD7500C7768C /* WorkoutView.swift */; };
 		DABA58312916AF4D00C7768C /* DonationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABA58302916AF4D00C7768C /* DonationView.swift */; };
 		DABB04D328F9ED7500C6DAC6 /* iCloudUserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABB04D228F9ED7500C6DAC6 /* iCloudUserView.swift */; };
@@ -60,7 +56,6 @@
 		DAD999F728C52B7E00CCA315 /* Experience12.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = DAD999F628C52B7E00CCA315 /* Experience12.rcproject */; };
 		DAF5EDBC290ED70C0080C594 /* AvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF5EDBB290ED70C0080C594 /* AvatarView.swift */; };
 		DAF5EDBF290ED7D10080C594 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF5EDBE290ED7D10080C594 /* HomeView.swift */; };
-		DAF7A3A5290DA3EC00E70157 /* AvatarHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF7A3A4290DA3EC00E70157 /* AvatarHomeView.swift */; };
 		DAFE4526290D50CB00C8A8E8 /* iCloudUserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABB04D228F9ED7500C6DAC6 /* iCloudUserView.swift */; };
 		DAFE4528290D523700C8A8E8 /* CloudKitUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFE4527290D523700C8A8E8 /* CloudKitUtility.swift */; };
 /* End PBXBuildFile section */
@@ -110,7 +105,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		DA0CCF06291985EA005F0419 /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
 		DA0E9BAB290046F40073AB94 /* DrawingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingView.swift; sourceTree = "<group>"; };
 		DA0E9BAD290047120073AB94 /* DrawingCanvasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingCanvasView.swift; sourceTree = "<group>"; };
 		DA0E9BAF290047590073AB94 /* DrawingCanvasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingCanvasViewController.swift; sourceTree = "<group>"; };
@@ -142,8 +136,6 @@
 		DA4D201228FC4CEF00E5FA1E /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		DA4D201728FC4F9100E5FA1E /* Gaia Watch Watch App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Gaia Watch Watch App.entitlements"; sourceTree = "<group>"; };
 		DA4D201828FC514D00E5FA1E /* StatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusView.swift; sourceTree = "<group>"; };
-		DA5B6EE5291AE0AA00D6D964 /* Cuidar.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Cuidar.sks; sourceTree = "<group>"; };
-		DA5B6EE7291AE0B900D6D964 /* Alimentar.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Alimentar.sks; sourceTree = "<group>"; };
 		DA7398B3289DB9DF0026667C /* DocumentationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentationView.swift; sourceTree = "<group>"; };
 		DA74C63A289C4ECC00F8B7FF /* Grids.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grids.swift; sourceTree = "<group>"; };
 		DA8A8BEE27E279BB0029C10E /* GAIA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GAIA.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -156,7 +148,6 @@
 		DA9B7BB8293E2D5D00B5E9E3 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		DA9B7BBA293E323500B5E9E3 /* StoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreManager.swift; sourceTree = "<group>"; };
 		DA9BFEB32854DDB300F59D0B /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DAA3855E292583A100E4B4EF /* FoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodView.swift; sourceTree = "<group>"; };
 		DAA5406A293E57C20035B1AF /* Gaia-Watch-Watch-App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Gaia-Watch-Watch-App-Info.plist"; sourceTree = SOURCE_ROOT; };
 		DAA9114528171CF60000E93D /* GAIA.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GAIA.entitlements; sourceTree = "<group>"; };
 		DABA582E2916AD7500C7768C /* WorkoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutView.swift; sourceTree = "<group>"; };
@@ -169,7 +160,6 @@
 		DAEED2202854CA5E00D63DC4 /* Experience9.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Experience9.rcproject; sourceTree = "<group>"; };
 		DAF5EDBB290ED70C0080C594 /* AvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarView.swift; sourceTree = "<group>"; };
 		DAF5EDBE290ED7D10080C594 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
-		DAF7A3A4290DA3EC00E70157 /* AvatarHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarHomeView.swift; sourceTree = "<group>"; };
 		DAFE4527290D523700C8A8E8 /* CloudKitUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CloudKitUtility.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -253,15 +243,6 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		DA5B6EE4291AE09300D6D964 /* SpriteKit */ = {
-			isa = PBXGroup;
-			children = (
-				DA5B6EE5291AE0AA00D6D964 /* Cuidar.sks */,
-				DA5B6EE7291AE0B900D6D964 /* Alimentar.sks */,
-			);
-			path = SpriteKit;
-			sourceTree = "<group>";
-		};
 		DA7C2D4128EE093600EE479D /* RealityKit */ = {
 			isa = PBXGroup;
 			children = (
@@ -319,11 +300,7 @@
 				DA2D00BC2889B328009D4D2E /* NewHomeView.swift */,
 				DA74C63A289C4ECC00F8B7FF /* Grids.swift */,
 				DA7398B3289DB9DF0026667C /* DocumentationView.swift */,
-				DAF7A3A4290DA3EC00E70157 /* AvatarHomeView.swift */,
-				DA0CCF06291985EA005F0419 /* MessageView.swift */,
-				DAA3855E292583A100E4B4EF /* FoodView.swift */,
 				DAA54069293E4E1A0035B1AF /* Storekit */,
-				DA5B6EE4291AE09300D6D964 /* SpriteKit */,
 				DABB04D128F9ED4B00C6DAC6 /* CloudKit */,
 				DA7C2D4128EE093600EE479D /* RealityKit */,
 				DA4A50F528F8831800FE24ED /* PencilKit */,
@@ -464,8 +441,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA5B6EE6291AE0AA00D6D964 /* Cuidar.sks in Resources */,
-				DA5B6EE8291AE0B900D6D964 /* Alimentar.sks in Resources */,
 				DA8A8BFB27E279BC0029C10E /* Preview Assets.xcassets in Resources */,
 				DA8A8BF827E279BC0029C10E /* Assets.xcassets in Resources */,
 			);
@@ -513,17 +488,14 @@
 				DA2D00BD2889B328009D4D2E /* NewHomeView.swift in Sources */,
 				DA4A50F928F8853D00FE24ED /* Persistence.swift in Sources */,
 				DA4A50F428F8828900FE24ED /* Galeria.xcdatamodeld in Sources */,
-				DAA3855F292583A100E4B4EF /* FoodView.swift in Sources */,
 				DA441A9227E3CA8B00CDB162 /* SceneView.swift in Sources */,
 				DA0E9BB0290047590073AB94 /* DrawingCanvasViewController.swift in Sources */,
 				DA7398B4289DB9DF0026667C /* DocumentationView.swift in Sources */,
 				DA2092A12832DC1300AC8C39 /* ColorPickerView.swift in Sources */,
 				DA8A8BF427E279BB0029C10E /* ContentView.swift in Sources */,
 				DA0E9BB4290047BA0073AB94 /* AddNewCanvasView.swift in Sources */,
-				DA0CCF07291985EA005F0419 /* MessageView.swift in Sources */,
 				DA74C63B289C4ECC00F8B7FF /* Grids.swift in Sources */,
 				DA0E9BB2290047800073AB94 /* GalleryView.swift in Sources */,
-				DAF7A3A5290DA3EC00E70157 /* AvatarHomeView.swift in Sources */,
 				DA4C0FED28454670009D7950 /* Experience5.rcproject in Sources */,
 				DA8A8BF627E279BB0029C10E /* Experience1.rcproject in Sources */,
 				DABB04D328F9ED7500C6DAC6 /* iCloudUserView.swift in Sources */,
