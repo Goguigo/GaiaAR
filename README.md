@@ -10,7 +10,8 @@ Cliente de Apple Watch da plataforma GaiaAR, acompanha a biblioteca de textos do
 
 ## Avatares GAIA
 
-O sistema dos Avatares GAIA é uma segunda plataforma para Web e Android e é uma expansão dos estudos do grupo, mais voltado ao afeto do que a movimentação e sensações de exploração e descoberta.
+O sistema dos Avatares GAIA é uma segunda plataforma para Web e Android, também é uma expansão dos estudos do grupo na área de epistemologia complexa.
+Essa plataforma tem ferramentas de criação de avatares e múltiplas maneiras de interagir com esse avatar.
 O código fonte pode ser encontrado aqui: https://x.thunkable.com/projectPage/63973e0ae2bb65021b9aa058
 
 ### Fim de suporte
