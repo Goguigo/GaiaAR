@@ -58,6 +58,7 @@
 		DAC1C42228C3E4EA008D0142 /* Experience11.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = DAC1C42128C3E4EA008D0142 /* Experience11.rcproject */; };
 		DAC41CC4290D9AF700C81664 /* DonationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC41CC3290D9AF700C81664 /* DonationsView.swift */; };
 		DAD999F728C52B7E00CCA315 /* Experience12.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = DAD999F628C52B7E00CCA315 /* Experience12.rcproject */; };
+		DADCE8C6298211F500A1B771 /* GaiaAR header site.png in Resources */ = {isa = PBXBuildFile; fileRef = DADCE8C5298211F500A1B771 /* GaiaAR header site.png */; };
 		DAF5EDBC290ED70C0080C594 /* AvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF5EDBB290ED70C0080C594 /* AvatarView.swift */; };
 		DAF5EDBF290ED7D10080C594 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF5EDBE290ED7D10080C594 /* HomeView.swift */; };
 		DAF7A3A5290DA3EC00E70157 /* AvatarHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF7A3A4290DA3EC00E70157 /* AvatarHomeView.swift */; };
@@ -166,6 +167,8 @@
 		DAC1C42128C3E4EA008D0142 /* Experience11.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Experience11.rcproject; sourceTree = "<group>"; };
 		DAC41CC3290D9AF700C81664 /* DonationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationsView.swift; sourceTree = "<group>"; };
 		DAD999F628C52B7E00CCA315 /* Experience12.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Experience12.rcproject; sourceTree = "<group>"; };
+		DADCE8C429820EC700A1B771 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		DADCE8C5298211F500A1B771 /* GaiaAR header site.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "GaiaAR header site.png"; path = "../../GAIA/Mídia/GaiaAR header site.png"; sourceTree = "<group>"; };
 		DAEED2202854CA5E00D63DC4 /* Experience9.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Experience9.rcproject; sourceTree = "<group>"; };
 		DAF5EDBB290ED70C0080C594 /* AvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarView.swift; sourceTree = "<group>"; };
 		DAF5EDBE290ED7D10080C594 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -311,6 +314,7 @@
 			isa = PBXGroup;
 			children = (
 				DA8F18622832DE5F0030F2B3 /* Info.plist */,
+				DADCE8C429820EC700A1B771 /* README.md */,
 				DAA9114528171CF60000E93D /* GAIA.entitlements */,
 				DA9BFEB32854DDB300F59D0B /* AppDelegate.swift */,
 				DA8A8BF327E279BB0029C10E /* ContentView.swift */,
@@ -329,6 +333,7 @@
 				DA4A50F528F8831800FE24ED /* PencilKit */,
 				DA7C2D4228EE0AAF00EE479D /* Desenhos */,
 				DA8A8BF727E279BC0029C10E /* Assets.xcassets */,
+				DADCE8C5298211F500A1B771 /* GaiaAR header site.png */,
 				DA4A50F228F8828900FE24ED /* Galeria.xcdatamodeld */,
 				DA8A8BF927E279BC0029C10E /* Preview Content */,
 			);
@@ -465,6 +470,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA5B6EE6291AE0AA00D6D964 /* Cuidar.sks in Resources */,
+				DADCE8C6298211F500A1B771 /* GaiaAR header site.png in Resources */,
 				DA5B6EE8291AE0B900D6D964 /* Alimentar.sks in Resources */,
 				DA8A8BFB27E279BC0029C10E /* Preview Assets.xcassets in Resources */,
 				DA8A8BF827E279BC0029C10E /* Assets.xcassets in Resources */,
