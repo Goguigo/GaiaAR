@@ -393,15 +393,7 @@ struct SceneView: View {
                             if self.list.lista == 16 {
                                 GalleryView()
                                     .environment(\.managedObjectContext, persistenceController.container.viewContext)
-                            } else {
-                                if self.list.lista == 17 {
-                                    MessageView()
-                                } else {
-                                    if list.lista == 18 {
-                                        FoodView()
-                                    }
-                                }
-                            }
+                            } 
                         }
                     }
                 }
