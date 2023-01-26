@@ -128,7 +128,7 @@ struct CloudKitCrudBootcamp: View {
                 .listStyle(PlainListStyle())
                 .toolbar {
                     EditButton()
-                
+                        .buttonStyle(.borderless)
                 }
 #endif
             }

@@ -37,6 +37,7 @@ struct TextEditorView: View {
     var body: some View {
         NavigationStack {
             VStack {
+                #if !targetEnvironment(macCatalyst)
                 HStack {
                     Button(action: {
                         vm.addButtonPressed()
@@ -55,9 +56,6 @@ struct TextEditorView: View {
                         .buttonBorderShape(.roundedRectangle)
                         Spacer()
                             .frame(width: 20)
-#if targetEnvironment(macCatalyst)
-                        fontEditor()
-                        #endif
                     }
                     Button {
                         vm.addButtonPressed()
@@ -93,6 +91,7 @@ struct TextEditorView: View {
                 Spacer()
                     .frame(height: 10)
                 Divider()
+#endif
                 VStack {
                     TextField("Toque aqui para editar...", text: $vm.text)
                         .font(.system(size: list.fontSize))
@@ -129,6 +128,58 @@ struct TextEditorView: View {
                 ActivityView(text: shareText.text)
             }
             .padding()
+#if targetEnvironment(macCatalyst)
+.toolbar {
+    ToolbarItemGroup {
+        HStack {
+            Button(action: {
+                vm.addButtonPressed()
+                self.list.lista = 0
+            }) {
+                Image(systemName: "chevron.left")
+            }
+            .buttonStyle(.borderless)
+            Spacer()
+                .frame(width: 40)
+            Group {
+                NavigationLink(destination: CloudKitCrudBootcamp()) {
+                    Image(systemName: "folder.fill.badge.person.crop")
+                }
+                .buttonStyle(.borderless)
+                Spacer()
+                    .frame(width: 20)
+            }
+            Button {
+                vm.addButtonPressed()
+            } label: {
+                Image(systemName: "plus.app.fill")
+            }
+            .buttonStyle(.borderless)
+            Spacer()
+                .frame(width: 20)
+            fontEditor()
+            Button(action: {
+                vm.text = ""
+            }) {
+                Image(systemName: "trash.fill")
+            }
+            .buttonStyle(.borderless)
+            Spacer()
+                .frame(width: 20)
+            Group {
+                Button (action: {
+                    if vm.text != "" {
+                        shareText = ShareText(text: vm.text)
+                    }
+                }) {
+                    Image(systemName: "square.and.arrow.up.fill")
+                }
+                .buttonStyle(.borderless)
+            }
+        }
+    }
+}
+#endif
         }
         .navigationBarBackButtonHidden(true)
     }
@@ -137,6 +188,7 @@ struct TextEditorView: View {
 struct TextEditorView_Previews: PreviewProvider {
     static var previews: some View {
         TextEditorView()
+            .environmentObject(Potato())
     }
 }
 
@@ -151,8 +203,12 @@ struct fontEditor: View {
             }) {
                 Text("-")
             }
+            #if targetEnvironment(macCatalyst)
+            .buttonStyle(.borderless)
+            #else
             .buttonStyle(.bordered)
             .buttonBorderShape(.roundedRectangle)
+            #endif
             Image(systemName: "textformat.size")
             Button(action: {
                 if list.fontSize < 32 {
@@ -161,8 +217,12 @@ struct fontEditor: View {
             }) {
                 Text("+")
             }
+    #if targetEnvironment(macCatalyst)
+            .buttonStyle(.borderless)
+    #else
             .buttonStyle(.bordered)
             .buttonBorderShape(.roundedRectangle)
+    #endif
             Spacer()
                 .frame(width: 20)
         }

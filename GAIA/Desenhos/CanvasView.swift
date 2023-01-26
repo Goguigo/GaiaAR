@@ -26,7 +26,7 @@ struct CanvasView: View {
                     Label("Voltar", systemImage: "arrow.backward.circle.fill")
                 }
                 .font(.title)
-                
+                .buttonStyle(.borderless)
                 Spacer()
             }
             Canvas { context, size in
@@ -53,7 +53,6 @@ struct CanvasView: View {
             )
             
             HStack {
-                
                 Slider(value: $thickness, in: 1...20) {
                     Text("Thickness")
                 }.frame(maxWidth: 200)
@@ -68,7 +67,8 @@ struct CanvasView: View {
                 }
             }
             .scaledToFit()
-        }.padding()
+        }
+        .padding()
     }
 }
 

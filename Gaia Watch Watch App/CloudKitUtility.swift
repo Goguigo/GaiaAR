@@ -14,7 +14,7 @@ class CloudKitUserBootcampViewModel: ObservableObject {
     @Published var isSignedInToiCloud: Bool = false
     @Published var error: String = ""
     init() {
-        getiCloudStatus ()
+        getiCloudStatus()
     }
     private func getiCloudStatus() {
         CKContainer.default () .accountStatus { [weak self] returnedStatus, returnedError in

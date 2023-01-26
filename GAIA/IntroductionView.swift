@@ -37,7 +37,7 @@ struct IntroductionView: View {
                 .buttonStyle(.borderedProminent)
                 Spacer()
                     .frame(height: 20)
-                Text("Versão 3.0")
+                Text("Versão 3.4")
                     .font(.footnote)
             }
         }

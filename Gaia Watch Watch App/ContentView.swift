@@ -11,9 +11,8 @@ struct ContentView: View {
     @EnvironmentObject var status: CloudKitUserBootcampViewModel
     @StateObject private var vm = CloudKitCrudBootcampViewModel()
     var body: some View {
-        NavigationView {
+        TabView {
             HomeView()
-                .environmentObject(CloudKitUserBootcampViewModel())
         }
     }
 }

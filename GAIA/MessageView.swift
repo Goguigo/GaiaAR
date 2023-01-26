@@ -11,7 +11,7 @@ struct MessageView: View {
     @EnvironmentObject var list: Potato
     @State var text: String = ""
     var body: some View {
-        NavigationView {
+        NavigationStack {
             VStack {
                 ScrollView {
                     HStack {
@@ -30,10 +30,12 @@ struct MessageView: View {
                             .foregroundColor(.white)
                     }
                 }
-                TextField("Nova mensagem...", text: $text )
-                    .padding()
-                    .background(Color.gray.opacity(0.4))
-                    .cornerRadius(20)
+                HStack {
+                    TextField("Nova mensagem...", text: $text )
+                        .padding()
+                        .background(Color.gray.opacity(0.4))
+                        .cornerRadius(20)
+                }
             }
             .padding()
             .navigationTitle("Mensagens")

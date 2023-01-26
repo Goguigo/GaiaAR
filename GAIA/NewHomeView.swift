@@ -8,9 +8,17 @@
 import SwiftUI
 
 struct NewHomeView: View {
-    
+    @StateObject var storeManager = StoreManager()
     @StateObject private var vm = CloudKitCrudBootcampViewModel()
     @EnvironmentObject var list: Potato
+    @State var isIAPVisible = false
+    let productIDs = [
+   "com.gaiaar.52",
+   "com.gaiaar.102",
+   "com.gaiaar.252",
+   "com.gaiaar.502",
+   "com.gaiaar.1002"
+    ]
     let columns = [
             GridItem(.adaptive(minimum: 250))
         ]
@@ -25,11 +33,12 @@ struct NewHomeView: View {
                         ) {
                             Label("Novos", systemImage: "sparkles")
                         }
-                        NavigationLink(destination: Tudo()) {
+                        NavigationLink(destination: Tudo()
+                        ) {
                             Label("Tudo", systemImage: "tray.2.fill")
                         }
                     }
-                    Section(header: Text("Categorias")) {
+                    Section(header: Text("AR")) {
                         NavigationLink(destination: Educação()) {
                             Label("Educação", systemImage: "graduationcap.fill")
                         }
@@ -44,15 +53,20 @@ struct NewHomeView: View {
                             NavigationLink(destination: Aplicativos()) {
                                 Label("Criatividade", systemImage: "paintbrush.fill")
                             }
-                            NavigationLink(destination: AvatarHomeView()) {
-                                Label("Avatares", systemImage: "person.crop.circle.fill")
-                            }
                         }
                         Section(header: Text("Outros")) {
                             NavigationLink(destination: DocumentationView()) {
                                 Label("Documentação", systemImage: "book.fill")
                             }
-                            NavigationLink(destination: DonationsView()) {
+                            NavigationLink(destination: DonationsView(storeManager: storeManager)
+                                .onAppear(perform: {
+                                    if isIAPVisible == false {
+                                        storeManager.getProducts(productIDs: productIDs)
+                                        isIAPVisible.toggle()
+                                    }
+                                    })
+                                        
+                            ) {
                                 Label("Doações", systemImage: "banknote.fill")
                             }
                         }
@@ -68,13 +82,27 @@ struct NewHomeView: View {
                 List {
                     Section(header: Text("Apps")) {
                         NavigationLink(destination: Aplicativos()
+                            .navigationTitle("Criatividade")
                         ) {
                             Label("Criatividade", systemImage: "paintbrush.fill")
                         }
                     }
                     Section(header: Text("Outros")) {
-                        NavigationLink(destination: DocumentationView()) {
+                        NavigationLink(destination: DocumentationView()
+                            .navigationTitle("Documentação")
+                        ) {
                             Label("Documentação", systemImage: "book.fill")
+                        }
+                        NavigationLink(destination:
+                                        DonationsView(storeManager: storeManager)
+                            .onAppear(perform: {
+                                if isIAPVisible == false {
+                                    storeManager.getProducts(productIDs: productIDs)
+                                    isIAPVisible.toggle()
+                                }
+                                })
+                        ) {
+                            Label("Doações", systemImage: "banknote.fill")
                         }
                     }
                 }

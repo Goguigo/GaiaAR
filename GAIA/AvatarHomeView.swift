@@ -10,7 +10,7 @@ import SwiftUI
 struct AvatarHomeView: View {
     @EnvironmentObject var list: Potato
     var body: some View {
-        NavigationView {
+        NavigationStack {
                 VStack {
                     Image("template")
                         .resizable()

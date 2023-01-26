@@ -45,6 +45,9 @@
 		DA8A8BF627E279BB0029C10E /* Experience1.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = DA8A8BF527E279BB0029C10E /* Experience1.rcproject */; };
 		DA8A8BF827E279BC0029C10E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA8A8BF727E279BC0029C10E /* Assets.xcassets */; };
 		DA8A8BFB27E279BC0029C10E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA8A8BFA27E279BC0029C10E /* Preview Assets.xcassets */; };
+		DA96456C295E0A93001FFBF9 /* StoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA96456B295E0A93001FFBF9 /* StoreManager.swift */; };
+		DA9B7BB9293E2D5D00B5E9E3 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA9B7BB8293E2D5D00B5E9E3 /* StoreKit.framework */; };
+		DA9B7BBB293E323500B5E9E3 /* StoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9B7BBA293E323500B5E9E3 /* StoreManager.swift */; };
 		DA9BFE762854D2E800F59D0B /* Experience9.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = DAEED2202854CA5E00D63DC4 /* Experience9.rcproject */; };
 		DA9BFEB42854DDB300F59D0B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9BFEB32854DDB300F59D0B /* AppDelegate.swift */; };
 		DAA3855F292583A100E4B4EF /* FoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA3855E292583A100E4B4EF /* FoodView.swift */; };
@@ -149,8 +152,12 @@
 		DA8A8BF727E279BC0029C10E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA8A8BFA27E279BC0029C10E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DA8F18622832DE5F0030F2B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		DA96456B295E0A93001FFBF9 /* StoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreManager.swift; sourceTree = "<group>"; };
+		DA9B7BB8293E2D5D00B5E9E3 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		DA9B7BBA293E323500B5E9E3 /* StoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreManager.swift; sourceTree = "<group>"; };
 		DA9BFEB32854DDB300F59D0B /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DAA3855E292583A100E4B4EF /* FoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodView.swift; sourceTree = "<group>"; };
+		DAA5406A293E57C20035B1AF /* Gaia-Watch-Watch-App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Gaia-Watch-Watch-App-Info.plist"; sourceTree = SOURCE_ROOT; };
 		DAA9114528171CF60000E93D /* GAIA.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GAIA.entitlements; sourceTree = "<group>"; };
 		DABA582E2916AD7500C7768C /* WorkoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutView.swift; sourceTree = "<group>"; };
 		DABA58302916AF4D00C7768C /* DonationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationView.swift; sourceTree = "<group>"; };
@@ -158,7 +165,6 @@
 		DABC7ECD290EDE670056CF0C /* ControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlView.swift; sourceTree = "<group>"; };
 		DAC1C42128C3E4EA008D0142 /* Experience11.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Experience11.rcproject; sourceTree = "<group>"; };
 		DAC41CC3290D9AF700C81664 /* DonationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationsView.swift; sourceTree = "<group>"; };
-		DAC81BF127EA96DB007D5921 /* Licensa.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Licensa.md; sourceTree = "<group>"; };
 		DAD999F628C52B7E00CCA315 /* Experience12.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Experience12.rcproject; sourceTree = "<group>"; };
 		DAEED2202854CA5E00D63DC4 /* Experience9.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Experience9.rcproject; sourceTree = "<group>"; };
 		DAF5EDBB290ED70C0080C594 /* AvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarView.swift; sourceTree = "<group>"; };
@@ -179,6 +185,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA9B7BB9293E2D5D00B5E9E3 /* StoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,6 +204,7 @@
 		DA427A0B290586120002F036 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DA9B7BB8293E2D5D00B5E9E3 /* StoreKit.framework */,
 				DA427A0E290586120002F036 /* SwiftUI.framework */,
 			);
 			name = Frameworks;
@@ -219,6 +227,7 @@
 		DA4D200128FC4B8F00E5FA1E /* Gaia Watch Watch App */ = {
 			isa = PBXGroup;
 			children = (
+				DAA5406A293E57C20035B1AF /* Gaia-Watch-Watch-App-Info.plist */,
 				DA4D201728FC4F9100E5FA1E /* Gaia Watch Watch App.entitlements */,
 				DA4D200228FC4B8F00E5FA1E /* Gaia_WatchApp.swift */,
 				DA4D200428FC4B8F00E5FA1E /* ContentView.swift */,
@@ -226,6 +235,7 @@
 				DAF5EDBD290ED7C20080C594 /* Avatares */,
 				DA4D201828FC514D00E5FA1E /* StatusView.swift */,
 				DABC7ECD290EDE670056CF0C /* ControlView.swift */,
+				DA96456B295E0A93001FFBF9 /* StoreManager.swift */,
 				DA4D201228FC4CEF00E5FA1E /* ListView.swift */,
 				DABA58302916AF4D00C7768C /* DonationView.swift */,
 				DAFE4527290D523700C8A8E8 /* CloudKitUtility.swift */,
@@ -309,10 +319,10 @@
 				DA2D00BC2889B328009D4D2E /* NewHomeView.swift */,
 				DA74C63A289C4ECC00F8B7FF /* Grids.swift */,
 				DA7398B3289DB9DF0026667C /* DocumentationView.swift */,
-				DAC41CC3290D9AF700C81664 /* DonationsView.swift */,
 				DAF7A3A4290DA3EC00E70157 /* AvatarHomeView.swift */,
 				DA0CCF06291985EA005F0419 /* MessageView.swift */,
 				DAA3855E292583A100E4B4EF /* FoodView.swift */,
+				DAA54069293E4E1A0035B1AF /* Storekit */,
 				DA5B6EE4291AE09300D6D964 /* SpriteKit */,
 				DABB04D128F9ED4B00C6DAC6 /* CloudKit */,
 				DA7C2D4128EE093600EE479D /* RealityKit */,
@@ -320,7 +330,6 @@
 				DA7C2D4228EE0AAF00EE479D /* Desenhos */,
 				DA8A8BF727E279BC0029C10E /* Assets.xcassets */,
 				DA4A50F228F8828900FE24ED /* Galeria.xcdatamodeld */,
-				DAC81BF127EA96DB007D5921 /* Licensa.md */,
 				DA8A8BF927E279BC0029C10E /* Preview Content */,
 			);
 			path = GAIA;
@@ -332,6 +341,15 @@
 				DA8A8BFA27E279BC0029C10E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DAA54069293E4E1A0035B1AF /* Storekit */ = {
+			isa = PBXGroup;
+			children = (
+				DA9B7BBA293E323500B5E9E3 /* StoreManager.swift */,
+				DAC41CC3290D9AF700C81664 /* DonationsView.swift */,
+			);
+			path = Storekit;
 			sourceTree = "<group>";
 		};
 		DABB04D128F9ED4B00C6DAC6 /* CloudKit */ = {
@@ -465,6 +483,7 @@
 				DABA582F2916AD7500C7768C /* WorkoutView.swift in Sources */,
 				DAFE4528290D523700C8A8E8 /* CloudKitUtility.swift in Sources */,
 				DA474A752910578E00260D93 /* ActionView.swift in Sources */,
+				DA96456C295E0A93001FFBF9 /* StoreManager.swift in Sources */,
 				DAF5EDBC290ED70C0080C594 /* AvatarView.swift in Sources */,
 				DA4D200328FC4B8F00E5FA1E /* Gaia_WatchApp.swift in Sources */,
 				DA4D201328FC4CEF00E5FA1E /* ListView.swift in Sources */,
@@ -484,6 +503,7 @@
 				DA2092A22832DC1300AC8C39 /* Information.swift in Sources */,
 				DA9BFE762854D2E800F59D0B /* Experience9.rcproject in Sources */,
 				DAC1C42228C3E4EA008D0142 /* Experience11.rcproject in Sources */,
+				DA9B7BBB293E323500B5E9E3 /* StoreManager.swift in Sources */,
 				DA4625C227E8EED200B8F937 /* Experience4.rcproject in Sources */,
 				DA356F0A28BD32BD00C163BB /* Experience6.rcproject in Sources */,
 				DA441A9627E3D44600CDB162 /* Experience3.rcproject in Sources */,
@@ -536,11 +556,12 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CODE_SIGN_ENTITLEMENTS = "Gaia Watch Watch App/Gaia Watch Watch App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.2;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Gaia Watch Watch App/Preview Content\"";
 				DEVELOPMENT_TEAM = XAFTQP97UL;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Gaia-Watch-Watch-App-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Gaia Watch";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.goguigo.gaiaar;
@@ -548,7 +569,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2;
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.goguigo.gaiaar.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
@@ -568,11 +589,12 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CODE_SIGN_ENTITLEMENTS = "Gaia Watch Watch App/Gaia Watch Watch App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.2;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Gaia Watch Watch App/Preview Content\"";
 				DEVELOPMENT_TEAM = XAFTQP97UL;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Gaia-Watch-Watch-App-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Gaia Watch";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.goguigo.gaiaar;
@@ -580,7 +602,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2;
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.goguigo.gaiaar.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
@@ -716,7 +738,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = GAIA/GAIA.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3.2;
+				CURRENT_PROJECT_VERSION = 4096;
 				DEVELOPMENT_ASSET_PATHS = "\"GAIA/Preview Content\"";
 				DEVELOPMENT_TEAM = XAFTQP97UL;
 				ENABLE_PREVIEWS = YES;
@@ -737,7 +759,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 3.2;
+				MARKETING_VERSION = 4.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.goguigo.gaiaar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -757,7 +779,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = GAIA/GAIA.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3.2;
+				CURRENT_PROJECT_VERSION = 4096;
 				DEVELOPMENT_ASSET_PATHS = "\"GAIA/Preview Content\"";
 				DEVELOPMENT_TEAM = XAFTQP97UL;
 				ENABLE_PREVIEWS = YES;
@@ -778,7 +800,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 3.2;
+				MARKETING_VERSION = 4.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.goguigo.gaiaar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";

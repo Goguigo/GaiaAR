@@ -7,6 +7,7 @@ import SwiftUI
 struct aApp: App {
     let persistenceController = PersistenceController.shared
     @EnvironmentObject var list: Potato
+    @StateObject var storeManager = StoreManager()
     var body: some Scene {
         WindowGroup {
             ContentView()

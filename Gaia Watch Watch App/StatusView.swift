@@ -10,14 +10,14 @@ import SwiftUI
 struct StatusView: View {
     @EnvironmentObject var status: CloudKitUserBootcampViewModel
     var body: some View {
-        if status.isSignedInToiCloud == true {
+        if status.isSignedInToiCloud == false {
             VStack {
                 Spacer()
-                Label("Sincronizado", systemImage: "checmark.icloud.fill")
+                Label("Sincronizado", systemImage: "checkmark.shield.fill")
                     .foregroundColor(.green)
                     .font(.title3)
                 Spacer()
-                Text("GaiaAR versão 4.0")
+                Text("GaiaAR versão 3.3")
                     .font(.footnote)
             }
             .navigationTitle("iCloud")
@@ -28,7 +28,7 @@ struct StatusView: View {
                     .foregroundColor(.red)
                     .font(.title3)
                 Spacer()
-                Text("GaiaAR versão 4.0")
+                Text("GaiaAR versão 3.3")
                     .font(.footnote)
             }
             .navigationTitle("iCloud")

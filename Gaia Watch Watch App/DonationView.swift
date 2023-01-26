@@ -6,45 +6,30 @@
 //
 
 import SwiftUI
+import StoreKit
 
 struct DonationView: View {
+@StateObject var storeManager: StoreManager
     var body: some View {
-        VStack {
-            List {
-                Button(action: {}) {
-                    Text("R$ 5")
+            List(storeManager.myProducts, id: \.self) { product in
+                    if UserDefaults.standard.bool(forKey: product.productIdentifier) {
+                        Text("Purchased")
+                            .foregroundColor(.green)
+                    } else {
+                        Button(action: {
+                            storeManager.purchaseProduct(product: product)
+                        }) {
+                            Text("Comprar doação de \(product.price)")
+                        }
+                        .foregroundColor(.blue)
                 }
-                Button(action: {}) {
-                    Text("R$ 10")
-                        .foregroundColor(.mint)
-                }
-                Button(action: {}) {
-                    Text("R$ 25")
-                        .foregroundColor(.green)
-                }
-                Button(action: {}) {
-                    Text("R$ 50")
-                        .foregroundColor(.red)
-                }
-                Button(action: {}) {
-                    Text("R$ 100")
-                        .font(.headline)
-                        .foregroundStyle(
-                            LinearGradient (
-                                colors: [.red, .blue, .green, .yellow],
-                                startPoint: .leading,
-                                endPoint: .trailing)
-                        )
-                }
-            }
-            .listStyle(.carousel)
+                            }
             .navigationTitle("Doações")
-        }
     }
 }
 
 struct DonationView_Previews: PreviewProvider {
     static var previews: some View {
-        DonationView()
+        DonationView(storeManager: StoreManager())
     }
 }

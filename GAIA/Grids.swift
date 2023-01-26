@@ -780,6 +780,73 @@ struct Aplicativos: View {
             GridItem(.adaptive(minimum: 250))
         ]
     var body: some View {
+        #if targetEnvironment(macCatalyst)
+        ScrollView {
+            LazyVGrid(columns: columns, spacing: 40) {
+                VStack {
+                    Image("app1")
+                        .resizable()
+                        .frame(width: 250, height: 200)
+                        .cornerRadius(5)
+                    Button (action: {
+                        self.list.lista = 10
+                    }) {
+                        Text("Desenhos")
+                            .font(.title)
+                    }
+                }
+                VStack {
+                    Image("app2")
+                        .resizable()
+                        .frame(width: 250, height: 200)
+                        .cornerRadius(5)
+                    Button (action: {
+                        self.list.lista = 11
+                    }) {
+                        Text("Texto")
+                            .font(.title)
+                    }
+                }
+                VStack {
+                    Image("app3")
+                        .resizable()
+                        .frame(width: 250, height: 200)
+                        .cornerRadius(5)
+                    Button(action: {
+                        self.list.lista = 16
+                    }) {
+                        Text("Galeria")
+                            .font(.title)
+                    }
+                }
+            }
+        }
+        .padding()
+        .edgesIgnoringSafeArea(.bottom)
+        .toolbar {
+            ToolbarItemGroup {
+               Link(destination: URL(string: "https://sites.google.com/view/gaia-org/in%C3%ADcio/suporte")!) {
+                    Image(systemName: "questionmark.circle.fill")
+                }
+               .buttonStyle(.borderless)
+                Spacer()
+                    .frame(width: 5)
+                Button(action: {
+                    SKStoreReviewController.requestReview()
+                }) {
+                    Image(systemName: "star.circle.fill")
+                }
+                .buttonStyle(.borderless)
+                Spacer()
+                    .frame(width: 5)
+                Link(destination: URL(string: "https://sites.google.com/view/gaia-org/")!) {
+                    Image(systemName: "safari.fill")
+                }
+                .buttonStyle(.borderless)
+            }
+        }
+        .padding()
+        #else
         ScrollView {
             LazyVGrid(columns: columns, spacing: 40) {
                     Button (action: {
@@ -842,7 +909,7 @@ struct Aplicativos: View {
                 }
             }
         }
-        
+        #endif
     }
 }
 struct grid_Previews: PreviewProvider {

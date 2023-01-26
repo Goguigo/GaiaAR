@@ -45,6 +45,7 @@ struct GalleryView: View {
                 .navigationTitle(Text("Galeria"))
                 .toolbar {
                     EditButton()
+                        .buttonStyle(.borderless)
                 }
                 Button {
                     list.lista = 0
@@ -54,7 +55,7 @@ struct GalleryView: View {
                         .frame(width: 25, height: 25)
                 }
                 .padding()
-                
+                .buttonStyle(.borderless)
             }
             VStack{
                 Label("Nenhuma tela selecionada", systemImage: "applepencil")

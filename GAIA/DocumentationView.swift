@@ -5,15 +5,12 @@
 //  Created by Rodrigo Pellanda on 05/08/22.
 //
 import SwiftUI
+import StoreKit
 
 struct DocumentationView: View {
     var body: some View {
         ScrollView {
             VStack {
-                Text("Documentação do GaiaAR:")
-                    .font(.largeTitle)
-                Spacer()
-                    .frame(height: 20)
                 Text("Realidade Aumentada")
                     .font(.title2)
                 VStack {
@@ -73,12 +70,6 @@ struct DocumentationView: View {
                                     Text("Uma sessão de meditação muito simples que dura em torno de 1 minuto.")
                                     Spacer()
                                         .frame(height: 20)
-                                    Text("Efeitos Especiais")
-                                        .font(.title2)
-                                    Text("Aplica efeitos especiais e gera animações divertidas no rosto do usuário usando a câmera traseira do dispositivo")
-                                    Text("Somente compatível com dispositivos equipados com o sistema de câmera TrueDepth")
-                                    Spacer()
-                                        .frame(height: 20)
                                     Text("Carrinho e avião")
                                         .font(.title2)
                                     VStack {
@@ -98,20 +89,25 @@ struct DocumentationView: View {
             }
         }
         .toolbar {
-            ToolbarItem {
-                Button(action: {}) {
+            ToolbarItemGroup {
+               Link(destination: URL(string: "https://sites.google.com/view/gaia-org/in%C3%ADcio/suporte")!) {
                     Image(systemName: "questionmark.circle.fill")
                 }
-            }
-            ToolbarItem {
-                Button(action: {}) {
+               .buttonStyle(.borderless)
+                Spacer()
+                    .frame(width: 5)
+                Button(action: {
+                    SKStoreReviewController.requestReview()
+                }) {
                     Image(systemName: "star.circle.fill")
                 }
-            }
-            ToolbarItem {
+                .buttonStyle(.borderless)
+                Spacer()
+                    .frame(width: 5)
                 Link(destination: URL(string: "https://sites.google.com/view/gaia-org/")!) {
                     Image(systemName: "safari.fill")
                 }
+                .buttonStyle(.borderless)
             }
         }
         .padding()
